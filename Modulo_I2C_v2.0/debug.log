@@ -1,0 +1,2 @@
+[0816/105554.413:ERROR:file_io.cc(134)] WriteFile: Se está cerrando la canalización. (0xE8)
+[0816/105554.418:ERROR:file_io.cc(89)] ReadExactly: expected 36, observed 0

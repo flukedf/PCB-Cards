@@ -1,0 +1,134 @@
+** Drc report for C:\Users\Eduardo Hernandez\Documents\PCBs\Modulo_I2C\Modulo_I2C.kicad_pcb **
+** Created on  **
+
+** Found 0 DRC errors **
+
+** Found 42 unconnected pads **
+ErrType(2): Pads no conectados
+    @ (143.500mm,61.000mm): Pad 2 en F.Cu, B.Cu, Interno, Sin cobre de D1 net MOTOR-
+    @ (151.460mm,53.000mm): Pad 2 en F.Cu, B.Cu, Interno, Sin cobre de Q1
+ErrType(2): Pads no conectados
+    @ (151.460mm,53.000mm): Pad 2 en F.Cu, B.Cu, Interno, Sin cobre de Q1 net MOTOR-
+    @ (119.000mm,37.500mm): Pad 2 en F.Cu, B.Cu, Interno, Sin cobre de P4
+ErrType(2): Pads no conectados
+    @ (153.000mm,37.460mm): Pad 2 en F.Cu, B.Cu, Interno, Sin cobre de P2 net +24VCD
+    @ (124.000mm,37.500mm): Pad 1 en F.Cu, B.Cu, Interno, Sin cobre de P4
+ErrType(2): Pads no conectados
+    @ (124.000mm,37.500mm): Pad 1 en F.Cu, B.Cu, Interno, Sin cobre de P4 net +24VCD
+    @ (131.500mm,61.000mm): Pad 1 en F.Cu, B.Cu, Interno, Sin cobre de D1
+ErrType(2): Pads no conectados
+    @ (131.500mm,61.000mm): Pad 1 en F.Cu, B.Cu, Interno, Sin cobre de D1 net +24VCD
+    @ (106.000mm,57.120mm): Pad 2 en F.Cu, B.Cu, Interno, Sin cobre de P1
+ErrType(2): Pads no conectados
+    @ (142.000mm,70.000mm): Pad 4 en F.Cu, B.Cu, Interno, Sin cobre de U2 net +24VCD
+    @ (131.500mm,61.000mm): Pad 1 en F.Cu, B.Cu, Interno, Sin cobre de D1
+ErrType(2): Pads no conectados
+    @ (153.000mm,42.540mm): Pad 4 en F.Cu, B.Cu, Interno, Sin cobre de P2 net SDA
+    @ (141.000mm,38.960mm): Pad 15 en F.Cu, B.Cu, Interno, Sin cobre de U1
+ErrType(2): Pads no conectados
+    @ (106.000mm,52.040mm): Pad 4 en F.Cu, B.Cu, Interno, Sin cobre de P1 net SDA
+    @ (127.000mm,58.500mm): Pad 2 en F.Cu, B.Cu, Interno, Sin cobre de R4
+ErrType(2): Pads no conectados
+    @ (141.000mm,38.960mm): Pad 15 en F.Cu, B.Cu, Interno, Sin cobre de U1 net SDA
+    @ (127.000mm,58.500mm): Pad 2 en F.Cu, B.Cu, Interno, Sin cobre de R4
+ErrType(2): Pads no conectados
+    @ (134.380mm,72.540mm): Pad 2 en F.Cu, B.Cu, Interno, Sin cobre de U2 net GND
+    @ (133.380mm,54.200mm): Pad 8 en F.Cu, B.Cu, Interno, Sin cobre de U1
+ErrType(2): Pads no conectados
+    @ (112.736mm,64.655mm): Pad 2 en F.Cu, B.Cu, Interno, Sin cobre de SW3 net GND
+    @ (108.736mm,64.655mm): Pad 2 en F.Cu, B.Cu, Interno, Sin cobre de SW2
+ErrType(2): Pads no conectados
+    @ (108.736mm,64.655mm): Pad 2 en F.Cu, B.Cu, Interno, Sin cobre de SW2 net GND
+    @ (104.736mm,64.655mm): Pad 2 en F.Cu, B.Cu, Interno, Sin cobre de SW1
+ErrType(2): Pads no conectados
+    @ (104.736mm,64.655mm): Pad 2 en F.Cu, B.Cu, Interno, Sin cobre de SW1 net GND
+    @ (106.000mm,54.580mm): Pad 3 en F.Cu, B.Cu, Interno, Sin cobre de P1
+ErrType(2): Pads no conectados
+    @ (153.000mm,40.000mm): Pad 3 en F.Cu, B.Cu, Interno, Sin cobre de P2 net GND
+    @ (133.380mm,54.200mm): Pad 8 en F.Cu, B.Cu, Interno, Sin cobre de U1
+ErrType(2): Pads no conectados
+    @ (133.380mm,54.200mm): Pad 8 en F.Cu, B.Cu, Interno, Sin cobre de U1 net GND
+    @ (106.000mm,54.580mm): Pad 3 en F.Cu, B.Cu, Interno, Sin cobre de P1
+ErrType(2): Pads no conectados
+    @ (106.000mm,54.580mm): Pad 3 en F.Cu, B.Cu, Interno, Sin cobre de P1 net GND
+    @ (106.000mm,37.500mm): Pad 2 en F.Cu, B.Cu, Interno, Sin cobre de P3
+ErrType(2): Pads no conectados
+    @ (116.840mm,58.500mm): Pad 1 en F.Cu, B.Cu, Interno, Sin cobre de R4 net +5V
+    @ (117.000mm,55.000mm): Pad 1 en F.Cu, B.Cu, Interno, Sin cobre de R3
+ErrType(2): Pads no conectados
+    @ (117.000mm,72.500mm): Pad 1 en F.Cu, B.Cu, Interno, Sin cobre de R8 net +5V
+    @ (116.840mm,62.000mm): Pad 1 en F.Cu, B.Cu, Interno, Sin cobre de R5
+ErrType(2): Pads no conectados
+    @ (116.840mm,62.000mm): Pad 1 en F.Cu, B.Cu, Interno, Sin cobre de R5 net +5V
+    @ (116.840mm,58.500mm): Pad 1 en F.Cu, B.Cu, Interno, Sin cobre de R4
+ErrType(2): Pads no conectados
+    @ (141.000mm,36.420mm): Pad 16 en F.Cu, B.Cu, Interno, Sin cobre de U1 net +5V
+    @ (117.000mm,48.000mm): Pad 1 en F.Cu, B.Cu, Interno, Sin cobre de R1
+ErrType(2): Pads no conectados
+    @ (106.000mm,46.960mm): Pad 6 en F.Cu, B.Cu, Interno, Sin cobre de P1 net +5V
+    @ (117.000mm,48.000mm): Pad 1 en F.Cu, B.Cu, Interno, Sin cobre de R1
+ErrType(2): Pads no conectados
+    @ (117.000mm,48.000mm): Pad 1 en F.Cu, B.Cu, Interno, Sin cobre de R1 net +5V
+    @ (117.000mm,51.500mm): Pad 1 en F.Cu, B.Cu, Interno, Sin cobre de R2
+ErrType(2): Pads no conectados
+    @ (117.000mm,51.500mm): Pad 1 en F.Cu, B.Cu, Interno, Sin cobre de R2 net +5V
+    @ (117.000mm,55.000mm): Pad 1 en F.Cu, B.Cu, Interno, Sin cobre de R3
+ErrType(2): Pads no conectados
+    @ (153.000mm,47.620mm): Pad 6 en F.Cu, B.Cu, Interno, Sin cobre de P2 net +5V
+    @ (141.000mm,36.420mm): Pad 16 en F.Cu, B.Cu, Interno, Sin cobre de U1
+ErrType(2): Pads no conectados
+    @ (127.000mm,62.000mm): Pad 2 en F.Cu, B.Cu, Interno, Sin cobre de R5 net SCL
+    @ (141.000mm,41.500mm): Pad 14 en F.Cu, B.Cu, Interno, Sin cobre de U1
+ErrType(2): Pads no conectados
+    @ (106.000mm,49.500mm): Pad 5 en F.Cu, B.Cu, Interno, Sin cobre de P1 net SCL
+    @ (127.000mm,62.000mm): Pad 2 en F.Cu, B.Cu, Interno, Sin cobre de R5
+ErrType(2): Pads no conectados
+    @ (141.000mm,41.500mm): Pad 14 en F.Cu, B.Cu, Interno, Sin cobre de U1 net SCL
+    @ (153.000mm,45.080mm): Pad 5 en F.Cu, B.Cu, Interno, Sin cobre de P2
+ErrType(2): Pads no conectados
+    @ (116.840mm,69.000mm): Pad 2 en F.Cu, B.Cu, Interno, Sin cobre de R7 net GND_DRIVER
+    @ (148.920mm,53.000mm): Pad 3 en F.Cu, B.Cu, Interno, Sin cobre de Q1
+ErrType(2): Pads no conectados
+    @ (148.920mm,53.000mm): Pad 3 en F.Cu, B.Cu, Interno, Sin cobre de Q1 net GND_DRIVER
+    @ (153.000mm,34.920mm): Pad 1 en F.Cu, B.Cu, Interno, Sin cobre de P2
+ErrType(2): Pads no conectados
+    @ (106.000mm,59.660mm): Pad 1 en F.Cu, B.Cu, Interno, Sin cobre de P1 net GND_DRIVER
+    @ (116.840mm,69.000mm): Pad 2 en F.Cu, B.Cu, Interno, Sin cobre de R7
+ErrType(2): Pads no conectados
+    @ (141.000mm,46.580mm): Pad 12 en F.Cu, B.Cu, Interno, Sin cobre de U1 net SENSOR
+    @ (111.000mm,37.500mm): Pad 1 en F.Cu, B.Cu, Interno, Sin cobre de P3
+ErrType(2): Pads no conectados
+    @ (127.160mm,72.500mm): Pad 2 en F.Cu, B.Cu, Interno, Sin cobre de R8 net SENSOR
+    @ (141.000mm,46.580mm): Pad 12 en F.Cu, B.Cu, Interno, Sin cobre de U1
+ErrType(2): Pads no conectados
+    @ (142.000mm,72.540mm): Pad 3 en F.Cu, B.Cu, Interno, Sin cobre de U2 net Net-(Q1-Pad1)
+    @ (154.000mm,53.000mm): Pad 1 en F.Cu, B.Cu, Interno, Sin cobre de Q1
+ErrType(2): Pads no conectados
+    @ (127.000mm,69.000mm): Pad 1 en F.Cu, B.Cu, Interno, Sin cobre de R7 net Net-(Q1-Pad1)
+    @ (142.000mm,72.540mm): Pad 3 en F.Cu, B.Cu, Interno, Sin cobre de U2
+ErrType(2): Pads no conectados
+    @ (127.160mm,48.000mm): Pad 2 en F.Cu, B.Cu, Interno, Sin cobre de R1 net Net-(R1-Pad2)
+    @ (104.736mm,72.275mm): Pad 1 en F.Cu, B.Cu, Interno, Sin cobre de SW1
+ErrType(2): Pads no conectados
+    @ (133.380mm,36.420mm): Pad 1 en F.Cu, B.Cu, Interno, Sin cobre de U1 net Net-(R1-Pad2)
+    @ (127.160mm,48.000mm): Pad 2 en F.Cu, B.Cu, Interno, Sin cobre de R1
+ErrType(2): Pads no conectados
+    @ (108.736mm,72.275mm): Pad 1 en F.Cu, B.Cu, Interno, Sin cobre de SW2 net Net-(R2-Pad2)
+    @ (127.160mm,51.500mm): Pad 2 en F.Cu, B.Cu, Interno, Sin cobre de R2
+ErrType(2): Pads no conectados
+    @ (133.380mm,38.960mm): Pad 2 en F.Cu, B.Cu, Interno, Sin cobre de U1 net Net-(R2-Pad2)
+    @ (127.160mm,51.500mm): Pad 2 en F.Cu, B.Cu, Interno, Sin cobre de R2
+ErrType(2): Pads no conectados
+    @ (127.160mm,55.000mm): Pad 2 en F.Cu, B.Cu, Interno, Sin cobre de R3 net Net-(R3-Pad2)
+    @ (112.736mm,72.275mm): Pad 1 en F.Cu, B.Cu, Interno, Sin cobre de SW3
+ErrType(2): Pads no conectados
+    @ (133.380mm,41.500mm): Pad 3 en F.Cu, B.Cu, Interno, Sin cobre de U1 net Net-(R3-Pad2)
+    @ (127.160mm,55.000mm): Pad 2 en F.Cu, B.Cu, Interno, Sin cobre de R3
+ErrType(2): Pads no conectados
+    @ (134.380mm,70.000mm): Pad 1 en F.Cu, B.Cu, Interno, Sin cobre de U2 net Net-(R6-Pad1)
+    @ (116.840mm,65.500mm): Pad 1 en F.Cu, B.Cu, Interno, Sin cobre de R6
+ErrType(2): Pads no conectados
+    @ (133.380mm,44.040mm): Pad 4 en F.Cu, B.Cu, Interno, Sin cobre de U1 net Net-(R6-Pad2)
+    @ (127.000mm,65.500mm): Pad 2 en F.Cu, B.Cu, Interno, Sin cobre de R6
+
+** End of Report **

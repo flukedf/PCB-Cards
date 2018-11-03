@@ -1,0 +1,1296 @@
+EESchema Schematic File Version 4
+LIBS:ArduinoBreadBoard-cache
+EELAYER 26 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "Modulo Reboot Remoto"
+Date "2018-09-24"
+Rev "Version 1.1"
+Comp "DIY"
+Comment1 "Reboot Nuc Remoto"
+Comment2 "Reboot Automatizado Seguridad Perimetral"
+Comment3 "Control Dos Puertos Remotos"
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Microchip_ATmega:ATmega328P-PU U6
+U 1 1 5BA138C3
+P 1820 6180
+F 0 "U6" H 1179 6226 50  0000 R CNN
+F 1 "ATmega328P-PU" H 1179 6135 50  0000 R CNN
+F 2 "Housings_DIP:DIP-28_W7.62mm" H 1820 6180 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 1820 6180 50  0001 C CNN
+	1    1820 6180
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1820 4680 1820 4620
+Wire Wire Line
+	1820 4620 1920 4620
+$Comp
+L Device:Crystal Y1
+U 1 1 5BA13A36
+P 2810 5680
+F 0 "Y1" V 2764 5811 50  0000 L CNN
+F 1 "16MHz" V 2610 5570 50  0000 L CNN
+F 2 "w_crystal:crystal_hc-49s" H 2810 5680 50  0001 C CNN
+F 3 "~" H 2810 5680 50  0001 C CNN
+	1    2810 5680
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2420 5580 2670 5580
+Wire Wire Line
+	2670 5580 2670 5530
+Wire Wire Line
+	2670 5530 2810 5530
+Wire Wire Line
+	2420 5680 2660 5680
+Wire Wire Line
+	2660 5680 2660 5830
+Wire Wire Line
+	2660 5830 2810 5830
+$Comp
+L Device:C C1
+U 1 1 5BA13B8D
+P 3190 5530
+F 0 "C1" V 3230 5620 50  0000 C CNN
+F 1 "22pF" V 3050 5530 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3228 5380 50  0001 C CNN
+F 3 "~" H 3190 5530 50  0001 C CNN
+	1    3190 5530
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 5BA13C01
+P 3190 5830
+F 0 "C5" V 3140 5920 50  0000 C CNN
+F 1 "22pF" V 3300 5810 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3228 5680 50  0001 C CNN
+F 3 "~" H 3190 5830 50  0001 C CNN
+	1    3190 5830
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3040 5530 2810 5530
+Connection ~ 2810 5530
+Wire Wire Line
+	3040 5830 2810 5830
+Connection ~ 2810 5830
+$Comp
+L Device:R R10
+U 1 1 5BA13FAB
+P 3300 6290
+F 0 "R10" H 3370 6336 50  0000 L CNN
+F 1 "10K" H 3370 6245 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 3230 6290 50  0001 C CNN
+F 3 "~" H 3300 6290 50  0001 C CNN
+	1    3300 6290
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5BA143E9
+P 3700 6480
+F 0 "SW1" H 3700 6765 50  0000 C CNN
+F 1 "RESET" H 3700 6674 50  0000 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_PTS645" H 3700 6680 50  0001 C CNN
+F 3 "" H 3700 6680 50  0001 C CNN
+	1    3700 6480
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR026
+U 1 1 5BA14463
+P 4010 6480
+F 0 "#PWR026" H 4010 6230 50  0001 C CNN
+F 1 "GND" H 4015 6307 50  0000 C CNN
+F 2 "" H 4010 6480 50  0001 C CNN
+F 3 "" H 4010 6480 50  0001 C CNN
+	1    4010 6480
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 5BA147F2
+P 3300 6720
+F 0 "C6" H 3185 6674 50  0000 R CNN
+F 1 "0.1uF" H 3185 6765 50  0000 R CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3338 6570 50  0001 C CNN
+F 3 "~" H 3300 6720 50  0001 C CNN
+	1    3300 6720
+	-1   0    0    1   
+$EndComp
+Text GLabel 3430 6920 2    39   Input ~ 0
+DTR
+Text GLabel 2570 6680 2    39   Input ~ 0
+Rx
+Text GLabel 2570 6780 2    39   Output ~ 0
+Tx
+Text GLabel 7910 5390 0    39   Output ~ 0
+DTR
+Text GLabel 7910 5490 0    39   Output ~ 0
+Rx
+Text GLabel 7910 5590 0    39   Input ~ 0
+Tx
+Text GLabel 2570 7080 2    39   BiDi ~ 0
+D4
+Text GLabel 2570 7180 2    39   BiDi ~ 0
+D5
+Text GLabel 2570 7280 2    39   BiDi ~ 0
+D6
+Text GLabel 2570 7380 2    39   BiDi ~ 0
+D7
+Wire Wire Line
+	2420 6480 3300 6480
+Wire Wire Line
+	2420 6680 2570 6680
+Wire Wire Line
+	2420 6780 2570 6780
+Wire Wire Line
+	2570 7080 2420 7080
+Wire Wire Line
+	2570 7180 2420 7180
+Wire Wire Line
+	2420 7280 2570 7280
+Wire Wire Line
+	2570 7380 2420 7380
+Wire Wire Line
+	3300 6440 3300 6480
+Connection ~ 3300 6480
+Wire Wire Line
+	3300 6140 3300 6100
+Wire Wire Line
+	3300 6570 3300 6480
+Wire Wire Line
+	3300 6870 3300 6920
+Wire Wire Line
+	3300 6920 3430 6920
+Wire Wire Line
+	3500 6480 3300 6480
+Wire Wire Line
+	3900 6480 4010 6480
+$Comp
+L Diode:1N4001 D9
+U 1 1 5BA2E9A4
+P 5170 5480
+F 0 "D9" H 5170 5264 50  0000 C CNN
+F 1 "1N4001" H 5170 5355 50  0000 C CNN
+F 2 "w_smd_diode:do214ac" H 5170 5305 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 5170 5480 50  0001 C CNN
+	1    5170 5480
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4940 5480 5020 5480
+$Comp
+L Device:CP C3
+U 1 1 5BA30C50
+P 5530 5740
+F 0 "C3" H 5648 5786 50  0000 L CNN
+F 1 "47uF" H 5648 5695 50  0000 L CNN
+F 2 "Capacitors_SMD:CP_Elec_8x6.5" H 5568 5590 50  0001 C CNN
+F 3 "~" H 5530 5740 50  0001 C CNN
+	1    5530 5740
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C4
+U 1 1 5BA30CFE
+P 6720 5740
+F 0 "C4" H 6838 5786 50  0000 L CNN
+F 1 "47uF" H 6838 5695 50  0000 L CNN
+F 2 "Capacitors_SMD:CP_Elec_8x6.5" H 6758 5590 50  0001 C CNN
+F 3 "~" H 6720 5740 50  0001 C CNN
+	1    6720 5740
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5530 5590 5530 5480
+$Comp
+L Device:C C2
+U 1 1 5BA321F9
+P 7180 5730
+F 0 "C2" H 7295 5776 50  0000 L CNN
+F 1 "100nF" H 7295 5685 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 7218 5580 50  0001 C CNN
+F 3 "~" H 7180 5730 50  0001 C CNN
+	1    7180 5730
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7180 5580 7180 5480
+$Comp
+L power:GND #PWR022
+U 1 1 5BA32D36
+P 5530 5930
+F 0 "#PWR022" H 5530 5680 50  0001 C CNN
+F 1 "GND" H 5535 5757 50  0000 C CNN
+F 2 "" H 5530 5930 50  0001 C CNN
+F 3 "" H 5530 5930 50  0001 C CNN
+	1    5530 5930
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR023
+U 1 1 5BA32E4F
+P 6720 5940
+F 0 "#PWR023" H 6720 5690 50  0001 C CNN
+F 1 "GND" H 6725 5767 50  0000 C CNN
+F 2 "" H 6720 5940 50  0001 C CNN
+F 3 "" H 6720 5940 50  0001 C CNN
+	1    6720 5940
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR024
+U 1 1 5BA32E92
+P 7180 5950
+F 0 "#PWR024" H 7180 5700 50  0001 C CNN
+F 1 "GND" H 7185 5777 50  0000 C CNN
+F 2 "" H 7180 5950 50  0001 C CNN
+F 3 "" H 7180 5950 50  0001 C CNN
+	1    7180 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR015
+U 1 1 5BA33074
+P 7180 5480
+F 0 "#PWR015" H 7180 5330 50  0001 C CNN
+F 1 "+5V" H 7195 5653 50  0000 C CNN
+F 2 "" H 7180 5480 50  0001 C CNN
+F 3 "" H 7180 5480 50  0001 C CNN
+	1    7180 5480
+	1    0    0    -1  
+$EndComp
+Connection ~ 7180 5480
+$Comp
+L power:+5V #PWR025
+U 1 1 5BA331F2
+P 3300 6100
+F 0 "#PWR025" H 3300 5950 50  0001 C CNN
+F 1 "+5V" H 3315 6273 50  0000 C CNN
+F 2 "" H 3300 6100 50  0001 C CNN
+F 3 "" H 3300 6100 50  0001 C CNN
+	1    3300 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR013
+U 1 1 5BA332BE
+P 1920 4580
+F 0 "#PWR013" H 1920 4430 50  0001 C CNN
+F 1 "+5V" H 1935 4753 50  0000 C CNN
+F 2 "" H 1920 4580 50  0001 C CNN
+F 3 "" H 1920 4580 50  0001 C CNN
+	1    1920 4580
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1920 4680 1920 4620
+Wire Wire Line
+	1920 4580 1920 4620
+Connection ~ 1920 4620
+$Comp
+L power:GND #PWR018
+U 1 1 5BA175C2
+P 5110 5720
+F 0 "#PWR018" H 5110 5470 50  0001 C CNN
+F 1 "GND" H 5115 5547 50  0000 C CNN
+F 2 "" H 5110 5720 50  0001 C CNN
+F 3 "" H 5110 5720 50  0001 C CNN
+	1    5110 5720
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2420 4980
+NoConn ~ 2420 5080
+NoConn ~ 2420 5180
+NoConn ~ 2420 5280
+NoConn ~ 2420 5380
+NoConn ~ 2420 5480
+NoConn ~ 2420 5880
+NoConn ~ 2420 5980
+NoConn ~ 2420 6080
+NoConn ~ 2420 6180
+NoConn ~ 2420 6280
+NoConn ~ 2420 6380
+NoConn ~ 1220 4980
+Wire Wire Line
+	6480 5480 6720 5480
+Wire Wire Line
+	6720 5590 6720 5480
+Connection ~ 6720 5480
+$Comp
+L power:+12V #PWR014
+U 1 1 5BA27D46
+P 5530 5370
+F 0 "#PWR014" H 5530 5220 50  0001 C CNN
+F 1 "+12V" H 5545 5543 50  0000 C CNN
+F 2 "" H 5530 5370 50  0001 C CNN
+F 3 "" H 5530 5370 50  0001 C CNN
+	1    5530 5370
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5320 5480 5530 5480
+Wire Wire Line
+	5530 5370 5530 5480
+Connection ~ 5530 5480
+Wire Wire Line
+	5530 5480 5750 5480
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5BA296DD
+P 5750 5420
+F 0 "#FLG01" H 5750 5495 50  0001 C CNN
+F 1 "PWR_FLAG" H 5750 5594 50  0000 C CNN
+F 2 "" H 5750 5420 50  0001 C CNN
+F 3 "~" H 5750 5420 50  0001 C CNN
+	1    5750 5420
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 5420 5750 5480
+Connection ~ 5750 5480
+Wire Wire Line
+	5750 5480 5880 5480
+Wire Wire Line
+	7180 5950 7180 5880
+Wire Wire Line
+	6180 5780 6180 5910
+Wire Wire Line
+	1820 7680 1820 7710
+$Comp
+L power:GND #PWR028
+U 1 1 5BA1397C
+P 1820 7780
+F 0 "#PWR028" H 1820 7530 50  0001 C CNN
+F 1 "GND" H 1825 7607 50  0000 C CNN
+F 2 "" H 1820 7780 50  0001 C CNN
+F 3 "" H 1820 7780 50  0001 C CNN
+	1    1820 7780
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3340 5660 3340 5830
+Wire Wire Line
+	3340 5530 3340 5660
+Connection ~ 3340 5660
+Wire Wire Line
+	3650 5660 3490 5660
+$Comp
+L power:GND #PWR016
+U 1 1 5BA13DBE
+P 3650 5660
+F 0 "#PWR016" H 3650 5410 50  0001 C CNN
+F 1 "GND" V 3655 5532 50  0000 R CNN
+F 2 "" H 3650 5660 50  0001 C CNN
+F 3 "" H 3650 5660 50  0001 C CNN
+	1    3650 5660
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5BA34815
+P 4070 5440
+F 0 "#FLG02" H 4070 5515 50  0001 C CNN
+F 1 "PWR_FLAG" H 4070 5614 50  0000 C CNN
+F 2 "" H 4070 5440 50  0001 C CNN
+F 3 "~" H 4070 5440 50  0001 C CNN
+	1    4070 5440
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4070 5440 3490 5440
+Wire Wire Line
+	3490 5440 3490 5660
+Connection ~ 3490 5660
+Wire Wire Line
+	3490 5660 3340 5660
+Wire Wire Line
+	6720 5890 6720 5940
+Wire Wire Line
+	5530 5890 5530 5930
+$Comp
+L power:GND #PWR021
+U 1 1 5BA36BC1
+P 6180 5910
+F 0 "#PWR021" H 6180 5660 50  0001 C CNN
+F 1 "GND" H 6185 5737 50  0000 C CNN
+F 2 "" H 6180 5910 50  0001 C CNN
+F 3 "" H 6180 5910 50  0001 C CNN
+	1    6180 5910
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:AMS1117-5.0 U5
+U 1 1 5BA2D695
+P 6180 5480
+F 0 "U5" H 6180 5722 50  0000 C CNN
+F 1 "AMS1117-5.0" H 6180 5631 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-223-3Lead_TabPin2" H 6180 5680 50  0001 C CNN
+F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 6280 5230 50  0001 C CNN
+	1    6180 5480
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6720 5480 7180 5480
+$Comp
+L power:GND #PWR019
+U 1 1 5BA28B3B
+P 9420 5760
+F 0 "#PWR019" H 9420 5510 50  0001 C CNN
+F 1 "GND" H 9425 5587 50  0000 C CNN
+F 2 "" H 9420 5760 50  0001 C CNN
+F 3 "" H 9420 5760 50  0001 C CNN
+	1    9420 5760
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 5BA28B72
+P 9630 5760
+F 0 "R9" V 9423 5760 50  0000 C CNN
+F 1 "330" V 9514 5760 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 9560 5760 50  0001 C CNN
+F 3 "~" H 9630 5760 50  0001 C CNN
+	1    9630 5760
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_ALT D10
+U 1 1 5BA28D41
+P 9990 5760
+F 0 "D10" H 9982 5505 50  0000 C CNN
+F 1 "POWER" H 9982 5596 50  0000 C CNN
+F 2 "w_smd_leds:Led_PLCC2_3528" H 9990 5760 50  0001 C CNN
+F 3 "~" H 9990 5760 50  0001 C CNN
+	1    9990 5760
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR020
+U 1 1 5BA2916E
+P 10250 5760
+F 0 "#PWR020" H 10250 5610 50  0001 C CNN
+F 1 "+5V" H 10265 5933 50  0000 C CNN
+F 2 "" H 10250 5760 50  0001 C CNN
+F 3 "" H 10250 5760 50  0001 C CNN
+	1    10250 5760
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9420 5760 9480 5760
+Wire Wire Line
+	9780 5760 9840 5760
+Wire Wire Line
+	10140 5760 10250 5760
+$Comp
+L power:GND #PWR017
+U 1 1 5BA5BB63
+P 7910 5690
+F 0 "#PWR017" H 7910 5440 50  0001 C CNN
+F 1 "GND" H 7915 5517 50  0000 C CNN
+F 2 "" H 7910 5690 50  0001 C CNN
+F 3 "" H 7910 5690 50  0001 C CNN
+	1    7910 5690
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR02
+U 1 1 5BA48C93
+P 3070 1150
+F 0 "#PWR02" H 3070 1000 50  0001 C CNN
+F 1 "+5V" H 3085 1323 50  0000 C CNN
+F 2 "" H 3070 1150 50  0001 C CNN
+F 3 "" H 3070 1150 50  0001 C CNN
+	1    3070 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:PC817 U2
+U 1 1 5BA59350
+P 1780 1640
+F 0 "U2" H 1780 1965 50  0000 C CNN
+F 1 "PC817" H 1780 1874 50  0000 C CNN
+F 2 "Housings_DIP:DIP-4_W7.62mm" H 1580 1440 50  0001 L CIN
+F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 1780 1640 50  0001 L CNN
+	1    1780 1640
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5BA5B9C0
+P 1480 2010
+F 0 "R4" V 1273 2010 50  0000 C CNN
+F 1 "1K" V 1364 2010 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 1410 2010 50  0001 C CNN
+F 3 "~" H 1480 2010 50  0001 C CNN
+	1    1480 2010
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED_ALT D4
+U 1 1 5BA5B9C7
+P 1040 1540
+F 0 "D4" H 1032 1285 50  0000 C CNN
+F 1 "NUC" H 1032 1376 50  0000 C CNN
+F 2 "w_smd_leds:Led_PLCC2_3528" H 1040 1540 50  0001 C CNN
+F 3 "~" H 1040 1540 50  0001 C CNN
+	1    1040 1540
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	830  1540 890  1540
+$Comp
+L Diode:1N4001 D3
+U 1 1 5BA5E122
+P 2840 1430
+F 0 "D3" H 2840 1646 50  0000 C CNN
+F 1 "1N4001" H 2840 1555 50  0000 C CNN
+F 2 "w_smd_diode:do214ac" H 2840 1255 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 2840 1430 50  0001 C CNN
+	1    2840 1430
+	0    1    1    0   
+$EndComp
+$Comp
+L JS1-5V-F:JS1-5V-F K2
+U 1 1 5BA5B2BF
+P 3610 1380
+F 0 "K2" H 3610 1847 50  0000 C CNN
+F 1 "JS1-5V-F" H 3610 1756 50  0000 C CNN
+F 2 "Panasonic:JS1-5V-F" H 3610 1380 50  0001 L BNN
+F 3 "DO-41 Panasonic" H 3610 1380 50  0001 L BNN
+F 4 "JS1-5V-F" H 3610 1380 50  0001 L BNN "Campo4"
+F 5 "Good" H 3610 1380 50  0001 L BNN "Campo5"
+F 6 "1.03 USD" H 3610 1380 50  0001 L BNN "Campo6"
+F 7 "Panasonic Electric" H 3610 1380 50  0001 L BNN "Campo7"
+F 8 "Electromechanical Relay Single Pole Double Throw 5 Amps Dc/10 Amps Ac 5 Volt 69.4Ohm Through Hole" H 3610 1380 50  0001 L BNN "Campo8"
+	1    3610 1380
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3210 1280 3070 1280
+Wire Wire Line
+	3070 1150 3070 1280
+Connection ~ 3070 1280
+Wire Wire Line
+	3070 1280 2840 1280
+Wire Wire Line
+	2840 1580 2840 1690
+Wire Wire Line
+	3210 1690 3210 1480
+$Comp
+L power:GND #PWR05
+U 1 1 5BA94644
+P 2840 2220
+F 0 "#PWR05" H 2840 1970 50  0001 C CNN
+F 1 "GND" H 2845 2047 50  0000 C CNN
+F 2 "" H 2840 2220 50  0001 C CNN
+F 3 "" H 2840 2220 50  0001 C CNN
+	1    2840 2220
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1190 1540 1480 1540
+$Comp
+L power:GND #PWR06
+U 1 1 5BA9EF3B
+P 1480 2250
+F 0 "#PWR06" H 1480 2000 50  0001 C CNN
+F 1 "GND" H 1485 2077 50  0000 C CNN
+F 2 "" H 1480 2250 50  0001 C CNN
+F 3 "" H 1480 2250 50  0001 C CNN
+	1    1480 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2840 1690 3210 1690
+Wire Wire Line
+	2840 1750 2840 1690
+Connection ~ 2840 1690
+$Comp
+L Device:R R2
+U 1 1 5BAA9F74
+P 2310 1740
+F 0 "R2" V 2103 1740 50  0000 C CNN
+F 1 "10K" V 2194 1740 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 2240 1740 50  0001 C CNN
+F 3 "~" H 2310 1740 50  0001 C CNN
+	1    2310 1740
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J2
+U 1 1 5BA94073
+P 4330 1380
+F 0 "J2" H 4249 1055 50  0000 C CNN
+F 1 "NUC" H 4249 1146 50  0000 C CNN
+F 2 "w_conn_mkds:mkds_1,5-3" H 4330 1380 50  0001 C CNN
+F 3 "~" H 4330 1380 50  0001 C CNN
+	1    4330 1380
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	4010 1380 4130 1380
+Wire Wire Line
+	1480 1860 1480 1740
+Wire Wire Line
+	1480 2250 1480 2160
+Text GLabel 830  1540 0    39   BiDi ~ 0
+D4
+$Comp
+L Transistor_BJT:MMBT5551L Q2
+U 1 1 5BA5E064
+P 2740 1950
+F 0 "Q2" H 2931 1996 50  0000 L CNN
+F 1 "MMBT5551L" H 2931 1905 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 2940 1875 50  0001 L CIN
+F 3 "www.onsemi.com/pub/Collateral/MMBT5550LT1-D.PDF" H 2740 1950 50  0001 L CNN
+	1    2740 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2840 2150 2840 2220
+Wire Wire Line
+	2460 1740 2540 1740
+Wire Wire Line
+	2540 1740 2540 1950
+Wire Wire Line
+	2080 1540 2540 1540
+Wire Wire Line
+	2540 1540 2540 1280
+Wire Wire Line
+	2540 1280 2840 1280
+Connection ~ 2840 1280
+$Comp
+L power:+5V #PWR01
+U 1 1 5BAC0BC6
+P 7240 990
+F 0 "#PWR01" H 7240 840 50  0001 C CNN
+F 1 "+5V" H 7255 1163 50  0000 C CNN
+F 2 "" H 7240 990 50  0001 C CNN
+F 3 "" H 7240 990 50  0001 C CNN
+	1    7240 990 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:PC817 U1
+U 1 1 5BAC0BCC
+P 5950 1480
+F 0 "U1" H 5950 1805 50  0000 C CNN
+F 1 "PC817" H 5950 1714 50  0000 C CNN
+F 2 "Housings_DIP:DIP-4_W7.62mm" H 5750 1280 50  0001 L CIN
+F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 5950 1480 50  0001 L CNN
+	1    5950 1480
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5BAC0BD3
+P 5650 1850
+F 0 "R3" V 5443 1850 50  0000 C CNN
+F 1 "1K" V 5534 1850 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 5580 1850 50  0001 C CNN
+F 3 "~" H 5650 1850 50  0001 C CNN
+	1    5650 1850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED_ALT D2
+U 1 1 5BAC0BDA
+P 5210 1380
+F 0 "D2" H 5202 1125 50  0000 C CNN
+F 1 "ARD" H 5202 1216 50  0000 C CNN
+F 2 "w_smd_leds:Led_PLCC2_3528" H 5210 1380 50  0001 C CNN
+F 3 "~" H 5210 1380 50  0001 C CNN
+	1    5210 1380
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5000 1380 5060 1380
+$Comp
+L Diode:1N4001 D1
+U 1 1 5BAC0BE2
+P 7010 1270
+F 0 "D1" H 7010 1486 50  0000 C CNN
+F 1 "1N4001" H 7010 1395 50  0000 C CNN
+F 2 "w_smd_diode:do214ac" H 7010 1095 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 7010 1270 50  0001 C CNN
+	1    7010 1270
+	0    1    1    0   
+$EndComp
+$Comp
+L JS1-5V-F:JS1-5V-F K1
+U 1 1 5BAC0BEE
+P 7780 1220
+F 0 "K1" H 7780 1687 50  0000 C CNN
+F 1 "JS1-5V-F" H 7780 1596 50  0000 C CNN
+F 2 "Panasonic:JS1-5V-F" H 7780 1220 50  0001 L BNN
+F 3 "DO-41 Panasonic" H 7780 1220 50  0001 L BNN
+F 4 "JS1-5V-F" H 7780 1220 50  0001 L BNN "Campo4"
+F 5 "Good" H 7780 1220 50  0001 L BNN "Campo5"
+F 6 "1.03 USD" H 7780 1220 50  0001 L BNN "Campo6"
+F 7 "Panasonic Electric" H 7780 1220 50  0001 L BNN "Campo7"
+F 8 "Electromechanical Relay Single Pole Double Throw 5 Amps Dc/10 Amps Ac 5 Volt 69.4Ohm Through Hole" H 7780 1220 50  0001 L BNN "Campo8"
+	1    7780 1220
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7380 1120 7240 1120
+Wire Wire Line
+	7240 990  7240 1120
+Connection ~ 7240 1120
+Wire Wire Line
+	7240 1120 7010 1120
+Wire Wire Line
+	7010 1420 7010 1530
+Wire Wire Line
+	7380 1530 7380 1320
+$Comp
+L power:GND #PWR03
+U 1 1 5BAC0BFB
+P 7010 2060
+F 0 "#PWR03" H 7010 1810 50  0001 C CNN
+F 1 "GND" H 7015 1887 50  0000 C CNN
+F 2 "" H 7010 2060 50  0001 C CNN
+F 3 "" H 7010 2060 50  0001 C CNN
+	1    7010 2060
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5360 1380 5650 1380
+$Comp
+L power:GND #PWR04
+U 1 1 5BAC0C02
+P 5650 2090
+F 0 "#PWR04" H 5650 1840 50  0001 C CNN
+F 1 "GND" H 5655 1917 50  0000 C CNN
+F 2 "" H 5650 2090 50  0001 C CNN
+F 3 "" H 5650 2090 50  0001 C CNN
+	1    5650 2090
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7010 1530 7380 1530
+Wire Wire Line
+	7010 1590 7010 1530
+Connection ~ 7010 1530
+$Comp
+L Device:R R1
+U 1 1 5BAC0C0B
+P 6480 1580
+F 0 "R1" V 6273 1580 50  0000 C CNN
+F 1 "10K" V 6364 1580 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 6410 1580 50  0001 C CNN
+F 3 "~" H 6480 1580 50  0001 C CNN
+	1    6480 1580
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J1
+U 1 1 5BAC0C12
+P 8500 1220
+F 0 "J1" H 8419 895 50  0000 C CNN
+F 1 "ARD" H 8419 986 50  0000 C CNN
+F 2 "w_conn_mkds:mkds_1,5-3" H 8500 1220 50  0001 C CNN
+F 3 "~" H 8500 1220 50  0001 C CNN
+	1    8500 1220
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8180 1020 8300 1020
+Wire Wire Line
+	8300 1020 8300 1120
+Wire Wire Line
+	8180 1420 8300 1420
+Wire Wire Line
+	8300 1420 8300 1320
+Wire Wire Line
+	8180 1220 8300 1220
+Wire Wire Line
+	5650 1700 5650 1580
+Wire Wire Line
+	5650 2090 5650 2000
+Text GLabel 5000 1380 0    39   BiDi ~ 0
+D5
+$Comp
+L Transistor_BJT:MMBT5551L Q1
+U 1 1 5BAC0C21
+P 6910 1790
+F 0 "Q1" H 7101 1836 50  0000 L CNN
+F 1 "MMBT5551L" H 7101 1745 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 7110 1715 50  0001 L CIN
+F 3 "www.onsemi.com/pub/Collateral/MMBT5550LT1-D.PDF" H 6910 1790 50  0001 L CNN
+	1    6910 1790
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7010 1990 7010 2060
+Wire Wire Line
+	6630 1580 6710 1580
+Wire Wire Line
+	6710 1580 6710 1790
+Wire Wire Line
+	6250 1380 6710 1380
+Wire Wire Line
+	6710 1380 6710 1120
+Wire Wire Line
+	6710 1120 7010 1120
+Connection ~ 7010 1120
+$Comp
+L power:+5V #PWR08
+U 1 1 5BAC55AA
+P 3180 3040
+F 0 "#PWR08" H 3180 2890 50  0001 C CNN
+F 1 "+5V" H 3195 3213 50  0000 C CNN
+F 2 "" H 3180 3040 50  0001 C CNN
+F 3 "" H 3180 3040 50  0001 C CNN
+	1    3180 3040
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:PC817 U4
+U 1 1 5BAC55B0
+P 1890 3530
+F 0 "U4" H 1890 3855 50  0000 C CNN
+F 1 "PC817" H 1890 3764 50  0000 C CNN
+F 2 "Housings_DIP:DIP-4_W7.62mm" H 1690 3330 50  0001 L CIN
+F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 1890 3530 50  0001 L CNN
+	1    1890 3530
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 5BAC55B7
+P 1590 3900
+F 0 "R8" V 1383 3900 50  0000 C CNN
+F 1 "1K" V 1474 3900 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 1520 3900 50  0001 C CNN
+F 3 "~" H 1590 3900 50  0001 C CNN
+	1    1590 3900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED_ALT D8
+U 1 1 5BAC55BE
+P 1150 3430
+F 0 "D8" H 1142 3175 50  0000 C CNN
+F 1 "RLY4" H 1142 3266 50  0000 C CNN
+F 2 "w_smd_leds:Led_PLCC2_3528" H 1150 3430 50  0001 C CNN
+F 3 "~" H 1150 3430 50  0001 C CNN
+	1    1150 3430
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	940  3430 1000 3430
+$Comp
+L Diode:1N4001 D7
+U 1 1 5BAC55C6
+P 2950 3320
+F 0 "D7" H 2950 3536 50  0000 C CNN
+F 1 "1N4001" H 2950 3445 50  0000 C CNN
+F 2 "w_smd_diode:do214ac" H 2950 3145 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 2950 3320 50  0001 C CNN
+	1    2950 3320
+	0    1    1    0   
+$EndComp
+$Comp
+L JS1-5V-F:JS1-5V-F K4
+U 1 1 5BAC55D2
+P 3720 3270
+F 0 "K4" H 3720 3737 50  0000 C CNN
+F 1 "JS1-5V-F" H 3720 3646 50  0000 C CNN
+F 2 "Panasonic:JS1-5V-F" H 3720 3270 50  0001 L BNN
+F 3 "DO-41 Panasonic" H 3720 3270 50  0001 L BNN
+F 4 "JS1-5V-F" H 3720 3270 50  0001 L BNN "Campo4"
+F 5 "Good" H 3720 3270 50  0001 L BNN "Campo5"
+F 6 "1.03 USD" H 3720 3270 50  0001 L BNN "Campo6"
+F 7 "Panasonic Electric" H 3720 3270 50  0001 L BNN "Campo7"
+F 8 "Electromechanical Relay Single Pole Double Throw 5 Amps Dc/10 Amps Ac 5 Volt 69.4Ohm Through Hole" H 3720 3270 50  0001 L BNN "Campo8"
+	1    3720 3270
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3320 3170 3180 3170
+Wire Wire Line
+	3180 3040 3180 3170
+Connection ~ 3180 3170
+Wire Wire Line
+	3180 3170 2950 3170
+Wire Wire Line
+	2950 3470 2950 3580
+Wire Wire Line
+	3320 3580 3320 3370
+$Comp
+L power:GND #PWR011
+U 1 1 5BAC55DF
+P 2950 4110
+F 0 "#PWR011" H 2950 3860 50  0001 C CNN
+F 1 "GND" H 2955 3937 50  0000 C CNN
+F 2 "" H 2950 4110 50  0001 C CNN
+F 3 "" H 2950 4110 50  0001 C CNN
+	1    2950 4110
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 3430 1590 3430
+$Comp
+L power:GND #PWR012
+U 1 1 5BAC55E6
+P 1590 4140
+F 0 "#PWR012" H 1590 3890 50  0001 C CNN
+F 1 "GND" H 1595 3967 50  0000 C CNN
+F 2 "" H 1590 4140 50  0001 C CNN
+F 3 "" H 1590 4140 50  0001 C CNN
+	1    1590 4140
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 3580 3320 3580
+Wire Wire Line
+	2950 3640 2950 3580
+Connection ~ 2950 3580
+$Comp
+L Device:R R6
+U 1 1 5BAC55EF
+P 2420 3630
+F 0 "R6" V 2213 3630 50  0000 C CNN
+F 1 "10K" V 2304 3630 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 2350 3630 50  0001 C CNN
+F 3 "~" H 2420 3630 50  0001 C CNN
+	1    2420 3630
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J4
+U 1 1 5BAC55F6
+P 4440 3270
+F 0 "J4" H 4359 2945 50  0000 C CNN
+F 1 "RLY4" H 4359 3036 50  0000 C CNN
+F 2 "w_conn_mkds:mkds_1,5-3" H 4440 3270 50  0001 C CNN
+F 3 "~" H 4440 3270 50  0001 C CNN
+	1    4440 3270
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	4120 3070 4240 3070
+Wire Wire Line
+	4240 3070 4240 3170
+Wire Wire Line
+	4120 3470 4240 3470
+Wire Wire Line
+	4240 3470 4240 3370
+Wire Wire Line
+	4120 3270 4240 3270
+Wire Wire Line
+	1590 3750 1590 3630
+Wire Wire Line
+	1590 4140 1590 4050
+Text GLabel 940  3430 0    39   BiDi ~ 0
+D6
+$Comp
+L Transistor_BJT:MMBT5551L Q4
+U 1 1 5BAC5605
+P 2850 3840
+F 0 "Q4" H 3041 3886 50  0000 L CNN
+F 1 "MMBT5551L" H 3041 3795 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 3050 3765 50  0001 L CIN
+F 3 "www.onsemi.com/pub/Collateral/MMBT5550LT1-D.PDF" H 2850 3840 50  0001 L CNN
+	1    2850 3840
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 4040 2950 4110
+Wire Wire Line
+	2570 3630 2650 3630
+Wire Wire Line
+	2650 3630 2650 3840
+Wire Wire Line
+	2190 3430 2650 3430
+Wire Wire Line
+	2650 3430 2650 3170
+Wire Wire Line
+	2650 3170 2950 3170
+Connection ~ 2950 3170
+$Comp
+L power:+5V #PWR07
+U 1 1 5BACC176
+P 7310 2920
+F 0 "#PWR07" H 7310 2770 50  0001 C CNN
+F 1 "+5V" H 7325 3093 50  0000 C CNN
+F 2 "" H 7310 2920 50  0001 C CNN
+F 3 "" H 7310 2920 50  0001 C CNN
+	1    7310 2920
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:PC817 U3
+U 1 1 5BACC17C
+P 6020 3410
+F 0 "U3" H 6020 3735 50  0000 C CNN
+F 1 "PC817" H 6020 3644 50  0000 C CNN
+F 2 "Housings_DIP:DIP-4_W7.62mm" H 5820 3210 50  0001 L CIN
+F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 6020 3410 50  0001 L CNN
+	1    6020 3410
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5BACC183
+P 5720 3780
+F 0 "R7" V 5513 3780 50  0000 C CNN
+F 1 "1K" V 5604 3780 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 5650 3780 50  0001 C CNN
+F 3 "~" H 5720 3780 50  0001 C CNN
+	1    5720 3780
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED_ALT D6
+U 1 1 5BACC18A
+P 5280 3310
+F 0 "D6" H 5272 3055 50  0000 C CNN
+F 1 "RLY3" H 5272 3146 50  0000 C CNN
+F 2 "w_smd_leds:Led_PLCC2_3528" H 5280 3310 50  0001 C CNN
+F 3 "~" H 5280 3310 50  0001 C CNN
+	1    5280 3310
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5070 3310 5130 3310
+$Comp
+L Diode:1N4001 D5
+U 1 1 5BACC192
+P 7080 3200
+F 0 "D5" H 7080 3416 50  0000 C CNN
+F 1 "1N4001" H 7080 3325 50  0000 C CNN
+F 2 "w_smd_diode:do214ac" H 7080 3025 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 7080 3200 50  0001 C CNN
+	1    7080 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L JS1-5V-F:JS1-5V-F K3
+U 1 1 5BACC19E
+P 7850 3150
+F 0 "K3" H 7850 3617 50  0000 C CNN
+F 1 "JS1-5V-F" H 7850 3526 50  0000 C CNN
+F 2 "Panasonic:JS1-5V-F" H 7850 3150 50  0001 L BNN
+F 3 "DO-41 Panasonic" H 7850 3150 50  0001 L BNN
+F 4 "JS1-5V-F" H 7850 3150 50  0001 L BNN "Campo4"
+F 5 "Good" H 7850 3150 50  0001 L BNN "Campo5"
+F 6 "1.03 USD" H 7850 3150 50  0001 L BNN "Campo6"
+F 7 "Panasonic Electric" H 7850 3150 50  0001 L BNN "Campo7"
+F 8 "Electromechanical Relay Single Pole Double Throw 5 Amps Dc/10 Amps Ac 5 Volt 69.4Ohm Through Hole" H 7850 3150 50  0001 L BNN "Campo8"
+	1    7850 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 3050 7310 3050
+Wire Wire Line
+	7310 2920 7310 3050
+Connection ~ 7310 3050
+Wire Wire Line
+	7310 3050 7080 3050
+Wire Wire Line
+	7080 3350 7080 3460
+Wire Wire Line
+	7450 3460 7450 3250
+$Comp
+L power:GND #PWR09
+U 1 1 5BACC1AB
+P 7080 3990
+F 0 "#PWR09" H 7080 3740 50  0001 C CNN
+F 1 "GND" H 7085 3817 50  0000 C CNN
+F 2 "" H 7080 3990 50  0001 C CNN
+F 3 "" H 7080 3990 50  0001 C CNN
+	1    7080 3990
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5430 3310 5720 3310
+$Comp
+L power:GND #PWR010
+U 1 1 5BACC1B2
+P 5720 4020
+F 0 "#PWR010" H 5720 3770 50  0001 C CNN
+F 1 "GND" H 5725 3847 50  0000 C CNN
+F 2 "" H 5720 4020 50  0001 C CNN
+F 3 "" H 5720 4020 50  0001 C CNN
+	1    5720 4020
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7080 3460 7450 3460
+Wire Wire Line
+	7080 3520 7080 3460
+Connection ~ 7080 3460
+$Comp
+L Device:R R5
+U 1 1 5BACC1BB
+P 6550 3510
+F 0 "R5" V 6343 3510 50  0000 C CNN
+F 1 "10K" V 6434 3510 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 6480 3510 50  0001 C CNN
+F 3 "~" H 6550 3510 50  0001 C CNN
+	1    6550 3510
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J3
+U 1 1 5BACC1C2
+P 8570 3150
+F 0 "J3" H 8489 2825 50  0000 C CNN
+F 1 "RLY3" H 8489 2916 50  0000 C CNN
+F 2 "w_conn_mkds:mkds_1,5-3" H 8570 3150 50  0001 C CNN
+F 3 "~" H 8570 3150 50  0001 C CNN
+	1    8570 3150
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8250 2950 8370 2950
+Wire Wire Line
+	8370 2950 8370 3050
+Wire Wire Line
+	8250 3350 8370 3350
+Wire Wire Line
+	8370 3350 8370 3250
+Wire Wire Line
+	8250 3150 8370 3150
+Wire Wire Line
+	5720 3630 5720 3510
+Wire Wire Line
+	5720 4020 5720 3930
+Text GLabel 5070 3310 0    39   BiDi ~ 0
+D7
+$Comp
+L Transistor_BJT:MMBT5551L Q3
+U 1 1 5BACC1D1
+P 6980 3720
+F 0 "Q3" H 7171 3766 50  0000 L CNN
+F 1 "MMBT5551L" H 7171 3675 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 7180 3645 50  0001 L CIN
+F 3 "www.onsemi.com/pub/Collateral/MMBT5550LT1-D.PDF" H 6980 3720 50  0001 L CNN
+	1    6980 3720
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7080 3920 7080 3990
+Wire Wire Line
+	6700 3510 6780 3510
+Wire Wire Line
+	6780 3510 6780 3720
+Wire Wire Line
+	6320 3310 6780 3310
+Wire Wire Line
+	6780 3310 6780 3050
+Wire Wire Line
+	6780 3050 7080 3050
+Connection ~ 7080 3050
+$Comp
+L Connector_Generic:Conn_01x02 J6
+U 1 1 5BADEAA9
+P 4740 5580
+F 0 "J6" H 4660 5255 50  0000 C CNN
+F 1 "POWER" H 4660 5346 50  0000 C CNN
+F 2 "w_conn_mkds:mkds_1,5-2" H 4740 5580 50  0001 C CNN
+F 3 "~" H 4740 5580 50  0001 C CNN
+	1    4740 5580
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4940 5580 5110 5580
+Wire Wire Line
+	5110 5580 5110 5720
+$Comp
+L Connector_Generic:Conn_01x04 J5
+U 1 1 5BB02D2B
+P 8110 5490
+F 0 "J5" H 8190 5482 50  0000 L CNN
+F 1 "SERIAL232" H 8190 5391 50  0000 L CNN
+F 2 "w_conn_mkds:mkds_1,5-4" H 8110 5490 50  0001 C CNN
+F 3 "~" H 8110 5490 50  0001 C CNN
+	1    8110 5490
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 1580 6330 1580
+NoConn ~ 2420 6880
+NoConn ~ 2420 6980
+Wire Wire Line
+	2190 3630 2270 3630
+Wire Wire Line
+	6400 3510 6320 3510
+Wire Wire Line
+	2160 1740 2080 1740
+Wire Wire Line
+	4130 1180 4130 1280
+Wire Wire Line
+	4130 1580 4130 1480
+Wire Wire Line
+	4010 1580 4130 1580
+Wire Wire Line
+	4010 1180 4130 1180
+$Comp
+L Device:C C7
+U 1 1 5BC031C9
+P 2020 7710
+F 0 "C7" V 2150 7700 50  0000 L CNN
+F 1 "100nF" V 2220 7670 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 2058 7560 50  0001 C CNN
+F 3 "~" H 2020 7710 50  0001 C CNN
+	1    2020 7710
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR027
+U 1 1 5BC03A48
+P 2220 7710
+F 0 "#PWR027" H 2220 7560 50  0001 C CNN
+F 1 "+5V" H 2235 7883 50  0000 C CNN
+F 2 "" H 2220 7710 50  0001 C CNN
+F 3 "" H 2220 7710 50  0001 C CNN
+	1    2220 7710
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2170 7710 2220 7710
+Wire Wire Line
+	1870 7710 1820 7710
+Connection ~ 1820 7710
+Wire Wire Line
+	1820 7710 1820 7780
+$Comp
+L Connector_Generic:Conn_01x03 J7
+U 1 1 5BAC0898
+P 5700 7250
+F 0 "J7" H 5779 7292 50  0000 L CNN
+F 1 "hole" H 5779 7201 50  0000 L CNN
+F 2 "RielDin:Bracket_RielDin_hole" H 5700 7250 50  0001 C CNN
+F 3 "~" H 5700 7250 50  0001 C CNN
+	1    5700 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J8
+U 1 1 5BAC0DA4
+P 5700 7640
+F 0 "J8" H 5779 7682 50  0000 L CNN
+F 1 "hole" H 5779 7591 50  0000 L CNN
+F 2 "RielDin:Bracket_RielDin_hole" H 5700 7640 50  0001 C CNN
+F 3 "~" H 5700 7640 50  0001 C CNN
+	1    5700 7640
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5500 7150
+NoConn ~ 5500 7250
+NoConn ~ 5500 7350
+NoConn ~ 5500 7540
+NoConn ~ 5500 7640
+NoConn ~ 5500 7740
+$EndSCHEMATC

@@ -1,0 +1,195 @@
+Cmp-Mod V01 Created by PcbNew   date = 04/04/2017 01:44:13 p. m.
+
+BeginCmp
+TimeStamp = 58DAF182
+Path = /58DACA3E
+Reference = U1;
+ValeurCmp = PCF8574;
+IdModule  = w_pth_circuits:dil_16-300;
+EndCmp
+
+BeginCmp
+TimeStamp = 58DAF737
+Path = /58DB13C8
+Reference = P1;
+ValeurCmp = CONN_01X03;
+IdModule  = w_pin_strip:pin_strip_2mm_3;
+EndCmp
+
+BeginCmp
+TimeStamp = 58DAF73D
+Path = /58DB1836
+Reference = P2;
+ValeurCmp = CONN_01X03;
+IdModule  = w_pin_strip:pin_strip_2mm_3;
+EndCmp
+
+BeginCmp
+TimeStamp = 58DAF743
+Path = /58DB2882
+Reference = P3;
+ValeurCmp = CONN_01X03;
+IdModule  = w_pin_strip:pin_strip_2mm_3;
+EndCmp
+
+BeginCmp
+TimeStamp = 58DAFD1C
+Path = /58DACA30
+Reference = R1;
+ValeurCmp = 10K;
+IdModule  = Resistors_SMD:R_1206_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 58DAFD21
+Path = /58DACA31
+Reference = R2;
+ValeurCmp = 10K;
+IdModule  = Resistors_SMD:R_1206_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 58DAFD26
+Path = /58DACA4D
+Reference = R3;
+ValeurCmp = 1K;
+IdModule  = Resistors_SMD:R_1206_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 58DAFD2B
+Path = /58DACA4E
+Reference = R4;
+ValeurCmp = 1K;
+IdModule  = Resistors_SMD:R_1206_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 58DAFD30
+Path = /58DACA4F
+Reference = R5;
+ValeurCmp = 1K;
+IdModule  = Resistors_SMD:R_1206_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 58DAFD35
+Path = /58DACA50
+Reference = R6;
+ValeurCmp = 1K;
+IdModule  = Resistors_SMD:R_1206_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 58DAFD3A
+Path = /58DB3186
+Reference = R7;
+ValeurCmp = 1K;
+IdModule  = Resistors_SMD:R_1206_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 58DAFD3F
+Path = /58DB31F3
+Reference = R8;
+ValeurCmp = 1K;
+IdModule  = Resistors_SMD:R_1206_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 58DAFD44
+Path = /58DB324B
+Reference = R9;
+ValeurCmp = 1K;
+IdModule  = Resistors_SMD:R_1206_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 58DAFD49
+Path = /58DB32A2
+Reference = R10;
+ValeurCmp = 1K;
+IdModule  = Resistors_SMD:R_1206_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 58DBD99D
+Path = /58DADD39
+Reference = P4;
+ValeurCmp = CONN_01X04;
+IdModule  = Pin_Headers:Pin_Header_Angled_1x04;
+EndCmp
+
+BeginCmp
+TimeStamp = 58DBD9A4
+Path = /58DAED46
+Reference = P5;
+ValeurCmp = CONN_01X04;
+IdModule  = Pin_Headers:Pin_Header_Angled_1x04;
+EndCmp
+
+BeginCmp
+TimeStamp = 58DBDF90
+Path = /58DB1961
+Reference = P6;
+ValeurCmp = CONN_01X16;
+IdModule  = w_conn_mkds:mkds_1,5-16;
+EndCmp
+
+BeginCmp
+TimeStamp = 58DBE374
+Path = /58DBE0D8
+Reference = C1;
+ValeurCmp = 100nF;
+IdModule  = Capacitors_SMD:C_0603_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 58DBE5A1
+Path = /58DC0B71
+Reference = P7;
+ValeurCmp = CONN_01X02;
+IdModule  = w_conn_mkds:mkds_1,5-2;
+EndCmp
+
+BeginCmp
+TimeStamp = 58DBED73
+Path = /58DC5F40
+Reference = D1;
+ValeurCmp = LED;
+IdModule  = w_smd_leds:Led_PLCC2_3528;
+EndCmp
+
+BeginCmp
+TimeStamp = 58DBED79
+Path = /58DC6066
+Reference = R11;
+ValeurCmp = 330;
+IdModule  = Resistors_SMD:R_1206_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 58DC15A8
+Path = 
+Reference = set01;
+ValeurCmp = hole_001.5;
+IdModule  = week11-KiCad-footprint:hole_001.5;
+EndCmp
+
+BeginCmp
+TimeStamp = 58DC15B1
+Path = 
+Reference = set02;
+ValeurCmp = hole_001.5;
+IdModule  = week11-KiCad-footprint:hole_001.5;
+EndCmp
+
+BeginCmp
+TimeStamp = 58DC15BA
+Path = 
+Reference = set03;
+ValeurCmp = hole_001.5;
+IdModule  = week11-KiCad-footprint:hole_001.5;
+EndCmp
+
+EndListe

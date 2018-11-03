@@ -1,0 +1,1182 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:20170409_remote_tht-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L SW_Push_45deg SW21
+U 1 1 58E8C119
+P 7900 3425
+F 0 "SW21" H 8020 3465 50  0000 L CNN
+F 1 "SW_Push_45deg" H 7900 3275 50  0001 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_PTS645" H 7900 3425 50  0001 C CNN
+F 3 "" H 7900 3425 50  0000 C CNN
+	1    7900 3425
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_Push_45deg SW22
+U 1 1 58E8C14B
+P 8350 3425
+F 0 "SW22" H 8470 3465 50  0000 L CNN
+F 1 "SW_Push_45deg" H 8350 3275 50  0001 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_PTS645" H 8350 3425 50  0001 C CNN
+F 3 "" H 8350 3425 50  0000 C CNN
+	1    8350 3425
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_Push_45deg SW23
+U 1 1 58E8C177
+P 8800 3425
+F 0 "SW23" H 8920 3465 50  0000 L CNN
+F 1 "SW_Push_45deg" H 8800 3275 50  0001 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_PTS645" H 8800 3425 50  0001 C CNN
+F 3 "" H 8800 3425 50  0000 C CNN
+	1    8800 3425
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_Push_45deg SW24
+U 1 1 58E8C1F0
+P 9250 3425
+F 0 "SW24" H 9370 3465 50  0000 L CNN
+F 1 "SW_Push_45deg" H 9250 3275 50  0001 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_PTS645" H 9250 3425 50  0001 C CNN
+F 3 "" H 9250 3425 50  0000 C CNN
+	1    9250 3425
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_Push_45deg SW61
+U 1 1 58E8C394
+P 7900 4825
+F 0 "SW61" H 8020 4865 50  0000 L CNN
+F 1 "SW_Push_45deg" H 7900 4675 50  0001 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_PTS645" H 7900 4825 50  0001 C CNN
+F 3 "" H 7900 4825 50  0000 C CNN
+	1    7900 4825
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_Push_45deg SW62
+U 1 1 58E8C39A
+P 8350 4825
+F 0 "SW62" H 8470 4865 50  0000 L CNN
+F 1 "SW_Push_45deg" H 8350 4675 50  0001 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_PTS645" H 8350 4825 50  0001 C CNN
+F 3 "" H 8350 4825 50  0000 C CNN
+	1    8350 4825
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_Push_45deg SW63
+U 1 1 58E8C3A0
+P 8800 4825
+F 0 "SW63" H 8920 4865 50  0000 L CNN
+F 1 "SW_Push_45deg" H 8800 4675 50  0001 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_PTS645" H 8800 4825 50  0001 C CNN
+F 3 "" H 8800 4825 50  0000 C CNN
+	1    8800 4825
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_Push_45deg SW64
+U 1 1 58E8C3A6
+P 9250 4825
+F 0 "SW64" H 9370 4865 50  0000 L CNN
+F 1 "SW_Push_45deg" H 9250 4675 50  0001 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_PTS645" H 9250 4825 50  0001 C CNN
+F 3 "" H 9250 4825 50  0000 C CNN
+	1    9250 4825
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_Push_45deg SW11
+U 1 1 58E8C984
+P 7900 3075
+F 0 "SW11" H 8020 3115 50  0000 L CNN
+F 1 "SW_Push_45deg" H 7900 2925 50  0001 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_PTS645" H 7900 3075 50  0001 C CNN
+F 3 "" H 7900 3075 50  0000 C CNN
+	1    7900 3075
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_Push_45deg SW12
+U 1 1 58E8C98A
+P 8350 3075
+F 0 "SW12" H 8470 3115 50  0000 L CNN
+F 1 "SW_Push_45deg" H 8350 2925 50  0001 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_PTS645" H 8350 3075 50  0001 C CNN
+F 3 "" H 8350 3075 50  0000 C CNN
+	1    8350 3075
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_Push_45deg SW13
+U 1 1 58E8C990
+P 8800 3075
+F 0 "SW13" H 8920 3115 50  0000 L CNN
+F 1 "SW_Push_45deg" H 8800 2925 50  0001 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_PTS645" H 8800 3075 50  0001 C CNN
+F 3 "" H 8800 3075 50  0000 C CNN
+	1    8800 3075
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_Push_45deg SW14
+U 1 1 58E8C996
+P 9250 3075
+F 0 "SW14" H 9370 3115 50  0000 L CNN
+F 1 "SW_Push_45deg" H 9250 2925 50  0001 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_PTS645" H 9250 3075 50  0001 C CNN
+F 3 "" H 9250 3075 50  0000 C CNN
+	1    9250 3075
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_Push_45deg SW51
+U 1 1 58E8C99C
+P 7900 4475
+F 0 "SW51" H 8020 4515 50  0000 L CNN
+F 1 "SW_Push_45deg" H 7900 4325 50  0001 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_PTS645" H 7900 4475 50  0001 C CNN
+F 3 "" H 7900 4475 50  0000 C CNN
+	1    7900 4475
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_Push_45deg SW52
+U 1 1 58E8C9A2
+P 8350 4475
+F 0 "SW52" H 8470 4515 50  0000 L CNN
+F 1 "SW_Push_45deg" H 8350 4325 50  0001 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_PTS645" H 8350 4475 50  0001 C CNN
+F 3 "" H 8350 4475 50  0000 C CNN
+	1    8350 4475
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_Push_45deg SW53
+U 1 1 58E8C9A8
+P 8800 4475
+F 0 "SW53" H 8920 4515 50  0000 L CNN
+F 1 "SW_Push_45deg" H 8800 4325 50  0001 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_PTS645" H 8800 4475 50  0001 C CNN
+F 3 "" H 8800 4475 50  0000 C CNN
+	1    8800 4475
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_Push_45deg SW54
+U 1 1 58E8C9AE
+P 9250 4475
+F 0 "SW54" H 9370 4515 50  0000 L CNN
+F 1 "SW_Push_45deg" H 9250 4325 50  0001 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_PTS645" H 9250 4475 50  0001 C CNN
+F 3 "" H 9250 4475 50  0000 C CNN
+	1    9250 4475
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_Push_45deg SW41
+U 1 1 58E8CD04
+P 7900 4125
+F 0 "SW41" H 8020 4165 50  0000 L CNN
+F 1 "SW_Push_45deg" H 7900 3975 50  0001 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_PTS645" H 7900 4125 50  0001 C CNN
+F 3 "" H 7900 4125 50  0000 C CNN
+	1    7900 4125
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_Push_45deg SW42
+U 1 1 58E8CD0A
+P 8350 4125
+F 0 "SW42" H 8470 4165 50  0000 L CNN
+F 1 "SW_Push_45deg" H 8350 3975 50  0001 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_PTS645" H 8350 4125 50  0001 C CNN
+F 3 "" H 8350 4125 50  0000 C CNN
+	1    8350 4125
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_Push_45deg SW43
+U 1 1 58E8CD10
+P 8800 4125
+F 0 "SW43" H 8920 4165 50  0000 L CNN
+F 1 "SW_Push_45deg" H 8800 3975 50  0001 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_PTS645" H 8800 4125 50  0001 C CNN
+F 3 "" H 8800 4125 50  0000 C CNN
+	1    8800 4125
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_Push_45deg SW44
+U 1 1 58E8CD16
+P 9250 4125
+F 0 "SW44" H 9370 4165 50  0000 L CNN
+F 1 "SW_Push_45deg" H 9250 3975 50  0001 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_PTS645" H 9250 4125 50  0001 C CNN
+F 3 "" H 9250 4125 50  0000 C CNN
+	1    9250 4125
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_Push_45deg SW81
+U 1 1 58E8CD1C
+P 7900 5525
+F 0 "SW81" H 8020 5565 50  0000 L CNN
+F 1 "SW_Push_45deg" H 7900 5375 50  0001 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_PTS645" H 7900 5525 50  0001 C CNN
+F 3 "" H 7900 5525 50  0000 C CNN
+	1    7900 5525
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_Push_45deg SW82
+U 1 1 58E8CD22
+P 8350 5525
+F 0 "SW82" H 8470 5565 50  0000 L CNN
+F 1 "SW_Push_45deg" H 8350 5375 50  0001 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_PTS645" H 8350 5525 50  0001 C CNN
+F 3 "" H 8350 5525 50  0000 C CNN
+	1    8350 5525
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_Push_45deg SW83
+U 1 1 58E8CD28
+P 8800 5525
+F 0 "SW83" H 8920 5565 50  0000 L CNN
+F 1 "SW_Push_45deg" H 8800 5375 50  0001 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_PTS645" H 8800 5525 50  0001 C CNN
+F 3 "" H 8800 5525 50  0000 C CNN
+	1    8800 5525
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_Push_45deg SW84
+U 1 1 58E8CD2E
+P 9250 5525
+F 0 "SW84" H 9370 5565 50  0000 L CNN
+F 1 "SW_Push_45deg" H 9250 5375 50  0001 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_PTS645" H 9250 5525 50  0001 C CNN
+F 3 "" H 9250 5525 50  0000 C CNN
+	1    9250 5525
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_Push_45deg SW31
+U 1 1 58E8CD34
+P 7900 3775
+F 0 "SW31" H 8020 3815 50  0000 L CNN
+F 1 "SW_Push_45deg" H 7900 3625 50  0001 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_PTS645" H 7900 3775 50  0001 C CNN
+F 3 "" H 7900 3775 50  0000 C CNN
+	1    7900 3775
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_Push_45deg SW32
+U 1 1 58E8CD3A
+P 8350 3775
+F 0 "SW32" H 8470 3815 50  0000 L CNN
+F 1 "SW_Push_45deg" H 8350 3625 50  0001 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_PTS645" H 8350 3775 50  0001 C CNN
+F 3 "" H 8350 3775 50  0000 C CNN
+	1    8350 3775
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_Push_45deg SW33
+U 1 1 58E8CD40
+P 8800 3775
+F 0 "SW33" H 8920 3815 50  0000 L CNN
+F 1 "SW_Push_45deg" H 8800 3625 50  0001 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_PTS645" H 8800 3775 50  0001 C CNN
+F 3 "" H 8800 3775 50  0000 C CNN
+	1    8800 3775
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_Push_45deg SW34
+U 1 1 58E8CD46
+P 9250 3775
+F 0 "SW34" H 9370 3815 50  0000 L CNN
+F 1 "SW_Push_45deg" H 9250 3625 50  0001 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_PTS645" H 9250 3775 50  0001 C CNN
+F 3 "" H 9250 3775 50  0000 C CNN
+	1    9250 3775
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_Push_45deg SW71
+U 1 1 58E8CD4C
+P 7900 5175
+F 0 "SW71" H 8020 5215 50  0000 L CNN
+F 1 "SW_Push_45deg" H 7900 5025 50  0001 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_PTS645" H 7900 5175 50  0001 C CNN
+F 3 "" H 7900 5175 50  0000 C CNN
+	1    7900 5175
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_Push_45deg SW72
+U 1 1 58E8CD52
+P 8350 5175
+F 0 "SW72" H 8470 5215 50  0000 L CNN
+F 1 "SW_Push_45deg" H 8350 5025 50  0001 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_PTS645" H 8350 5175 50  0001 C CNN
+F 3 "" H 8350 5175 50  0000 C CNN
+	1    8350 5175
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_Push_45deg SW73
+U 1 1 58E8CD58
+P 8800 5175
+F 0 "SW73" H 8920 5215 50  0000 L CNN
+F 1 "SW_Push_45deg" H 8800 5025 50  0001 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_PTS645" H 8800 5175 50  0001 C CNN
+F 3 "" H 8800 5175 50  0000 C CNN
+	1    8800 5175
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_Push_45deg SW74
+U 1 1 58E8CD5E
+P 9250 5175
+F 0 "SW74" H 9370 5215 50  0000 L CNN
+F 1 "SW_Push_45deg" H 9250 5025 50  0001 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_PTS645" H 9250 5175 50  0001 C CNN
+F 3 "" H 9250 5175 50  0000 C CNN
+	1    9250 5175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 2925 7750 5425
+Wire Wire Line
+	7750 5425 7800 5425
+Wire Wire Line
+	7800 5075 7750 5075
+Connection ~ 7750 5075
+Wire Wire Line
+	7800 4725 7750 4725
+Connection ~ 7750 4725
+Wire Wire Line
+	7800 4025 7750 4025
+Connection ~ 7750 4025
+Wire Wire Line
+	7800 4375 7750 4375
+Connection ~ 7750 4375
+Wire Wire Line
+	7800 3675 7750 3675
+Connection ~ 7750 3675
+Wire Wire Line
+	7800 3325 7750 3325
+Connection ~ 7750 3325
+Wire Wire Line
+	7800 2975 7750 2975
+Connection ~ 7750 2975
+Wire Wire Line
+	8200 2925 8200 5425
+Wire Wire Line
+	8200 5425 8250 5425
+Wire Wire Line
+	8250 5075 8200 5075
+Connection ~ 8200 5075
+Wire Wire Line
+	8250 4725 8200 4725
+Connection ~ 8200 4725
+Wire Wire Line
+	8250 4375 8200 4375
+Connection ~ 8200 4375
+Wire Wire Line
+	8250 4025 8200 4025
+Connection ~ 8200 4025
+Wire Wire Line
+	8250 3675 8200 3675
+Connection ~ 8200 3675
+Wire Wire Line
+	8250 3325 8200 3325
+Connection ~ 8200 3325
+Wire Wire Line
+	8250 2975 8200 2975
+Connection ~ 8200 2975
+Wire Wire Line
+	8650 2925 8650 5425
+Wire Wire Line
+	8650 5425 8700 5425
+Wire Wire Line
+	8700 5075 8650 5075
+Connection ~ 8650 5075
+Wire Wire Line
+	8700 4725 8650 4725
+Connection ~ 8650 4725
+Wire Wire Line
+	8700 4025 8650 4025
+Connection ~ 8650 4025
+Wire Wire Line
+	8700 3675 8650 3675
+Connection ~ 8650 3675
+Wire Wire Line
+	8700 3325 8650 3325
+Connection ~ 8650 3325
+Wire Wire Line
+	8700 2975 8650 2975
+Connection ~ 8650 2975
+Wire Wire Line
+	9100 2925 9100 5425
+Wire Wire Line
+	9100 5425 9150 5425
+Wire Wire Line
+	9150 5075 9100 5075
+Connection ~ 9100 5075
+Wire Wire Line
+	9150 4725 9100 4725
+Connection ~ 9100 4725
+Wire Wire Line
+	9150 4375 9100 4375
+Connection ~ 9100 4375
+Wire Wire Line
+	9150 4025 9100 4025
+Connection ~ 9100 4025
+Wire Wire Line
+	9150 3675 9100 3675
+Connection ~ 9100 3675
+Wire Wire Line
+	9150 3325 9100 3325
+Connection ~ 9100 3325
+Wire Wire Line
+	9150 2975 9100 2975
+Connection ~ 9100 2975
+Wire Wire Line
+	7600 3225 9350 3225
+Wire Wire Line
+	9350 3225 9350 3175
+Wire Wire Line
+	8900 3225 8900 3175
+Connection ~ 8900 3225
+Wire Wire Line
+	8450 3225 8450 3175
+Connection ~ 8450 3225
+Wire Wire Line
+	8000 3225 8000 3175
+Connection ~ 8000 3225
+Wire Wire Line
+	7600 3575 9350 3575
+Wire Wire Line
+	9350 3575 9350 3525
+Wire Wire Line
+	8900 3575 8900 3525
+Connection ~ 8900 3575
+Wire Wire Line
+	8450 3575 8450 3525
+Connection ~ 8450 3575
+Wire Wire Line
+	8000 3575 8000 3525
+Connection ~ 8000 3575
+Wire Wire Line
+	7600 3925 9350 3925
+Wire Wire Line
+	9350 3925 9350 3875
+Wire Wire Line
+	8900 3875 8900 3925
+Connection ~ 8900 3925
+Wire Wire Line
+	8450 3875 8450 3925
+Connection ~ 8450 3925
+Wire Wire Line
+	8000 3875 8000 3925
+Connection ~ 8000 3925
+Wire Wire Line
+	7600 4275 9350 4275
+Wire Wire Line
+	9350 4275 9350 4225
+Wire Wire Line
+	8900 4225 8900 4275
+Connection ~ 8900 4275
+Wire Wire Line
+	8450 4225 8450 4275
+Connection ~ 8450 4275
+Wire Wire Line
+	8000 4225 8000 4275
+Connection ~ 8000 4275
+Wire Wire Line
+	7600 4625 9350 4625
+Wire Wire Line
+	9350 4625 9350 4575
+Wire Wire Line
+	8900 4575 8900 4625
+Connection ~ 8900 4625
+Wire Wire Line
+	8450 4575 8450 4625
+Connection ~ 8450 4625
+Wire Wire Line
+	8000 4575 8000 4625
+Connection ~ 8000 4625
+Wire Wire Line
+	7600 4975 9350 4975
+Wire Wire Line
+	9350 4975 9350 4925
+Wire Wire Line
+	8900 4925 8900 4975
+Connection ~ 8900 4975
+Wire Wire Line
+	8450 4925 8450 4975
+Connection ~ 8450 4975
+Wire Wire Line
+	8000 4925 8000 4975
+Connection ~ 8000 4975
+Wire Wire Line
+	7600 5325 9350 5325
+Wire Wire Line
+	9350 5325 9350 5275
+Wire Wire Line
+	8900 5275 8900 5325
+Connection ~ 8900 5325
+Wire Wire Line
+	8450 5275 8450 5325
+Connection ~ 8450 5325
+Wire Wire Line
+	8000 5275 8000 5325
+Connection ~ 8000 5325
+Wire Wire Line
+	7600 5675 9350 5675
+Wire Wire Line
+	9350 5675 9350 5625
+Wire Wire Line
+	8900 5625 8900 5675
+Connection ~ 8900 5675
+Wire Wire Line
+	8450 5625 8450 5675
+Connection ~ 8450 5675
+Wire Wire Line
+	8000 5625 8000 5675
+Connection ~ 8000 5675
+Wire Wire Line
+	8700 4375 8650 4375
+Connection ~ 8650 4375
+Wire Wire Line
+	4350 2775 4450 2775
+Wire Wire Line
+	4350 2875 4450 2875
+Wire Wire Line
+	4350 2975 4450 2975
+Wire Wire Line
+	4350 3075 4450 3075
+Wire Wire Line
+	4350 3175 4450 3175
+Wire Wire Line
+	4350 3275 4450 3275
+Wire Wire Line
+	4350 3375 4450 3375
+Wire Wire Line
+	4350 3475 4450 3475
+Wire Wire Line
+	4350 3625 4450 3625
+Wire Wire Line
+	4350 3725 4450 3725
+Wire Wire Line
+	4350 3825 4450 3825
+Wire Wire Line
+	4350 3925 4450 3925
+Text GLabel 4450 3625 2    39   Input ~ 0
+PC0
+Text GLabel 4450 3725 2    39   Input ~ 0
+PC1
+Text GLabel 4450 3825 2    39   Input ~ 0
+PC2
+Text GLabel 4450 3925 2    39   Input ~ 0
+PC3
+Text GLabel 4450 3475 2    39   Input ~ 0
+PB7
+Text GLabel 4450 3375 2    39   Input ~ 0
+PB6
+Text GLabel 4450 3275 2    39   Input ~ 0
+PB5
+Text GLabel 4450 3175 2    39   Input ~ 0
+PB4
+Text GLabel 4450 3075 2    39   Input ~ 0
+PB3
+Text GLabel 4450 2975 2    39   Input ~ 0
+PB2
+Text GLabel 4450 2875 2    39   Input ~ 0
+PB1
+Text GLabel 4450 2775 2    39   Input ~ 0
+PB0
+Text GLabel 7600 3225 0    39   Input ~ 0
+PB0
+Text GLabel 7600 3575 0    39   Input ~ 0
+PD4
+Text GLabel 7600 3925 0    39   Input ~ 0
+PD7
+Text GLabel 7600 4275 0    39   Input ~ 0
+PB5
+Text GLabel 7600 4625 0    39   Input ~ 0
+PB4
+Text GLabel 7600 4975 0    39   Input ~ 0
+PB3
+Text GLabel 7600 5325 0    39   Input ~ 0
+PB2
+Text GLabel 7600 5675 0    39   Input ~ 0
+PB1
+Text GLabel 7750 2925 1    39   Input ~ 0
+PC3
+Text GLabel 8200 2925 1    39   Input ~ 0
+PC2
+Text GLabel 8650 2925 1    39   Input ~ 0
+PC1
+Text GLabel 9100 2925 1    39   Input ~ 0
+PC0
+$Comp
+L LED D1
+U 1 1 58E9BA8B
+P 6350 3225
+F 0 "D1" H 6350 3325 50  0000 C CNN
+F 1 "LED" H 6350 3125 50  0000 C CNN
+F 2 "LEDs:LED_D5.0mm_Horizontal_O3.81mm_Z3.0mm" H 6350 3225 50  0001 C CNN
+F 3 "" H 6350 3225 50  0000 C CNN
+	1    6350 3225
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D2
+U 1 1 58E9BBA0
+P 6850 3625
+F 0 "D2" H 6850 3725 50  0000 C CNN
+F 1 "LED" H 6850 3525 50  0000 C CNN
+F 2 "LEDs:LED_D5.0mm_Horizontal_O3.81mm_Z3.0mm" H 6850 3625 50  0001 C CNN
+F 3 "" H 6850 3625 50  0000 C CNN
+	1    6850 3625
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Q_NPN_BEC Q1
+U 1 1 58E9C00B
+P 6250 4025
+F 0 "Q1" H 6450 4075 50  0000 L CNN
+F 1 "MMBT2222" H 6450 3975 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 6450 4125 50  0001 C CNN
+F 3 "" H 6250 4025 50  0000 C CNN
+	1    6250 4025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 3675 6350 3825
+$Comp
+L GND #PWR01
+U 1 1 58E9C9E9
+P 6350 4275
+F 0 "#PWR01" H 6350 4025 50  0001 C CNN
+F 1 "GND" H 6350 4125 50  0000 C CNN
+F 2 "" H 6350 4275 50  0000 C CNN
+F 3 "" H 6350 4275 50  0000 C CNN
+	1    6350 4275
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 58E9CD81
+P 2400 5225
+F 0 "#PWR02" H 2400 4975 50  0001 C CNN
+F 1 "GND" H 2400 5075 50  0000 C CNN
+F 2 "" H 2400 5225 50  0000 C CNN
+F 3 "" H 2400 5225 50  0000 C CNN
+	1    2400 5225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 5075 2450 5075
+Wire Wire Line
+	2400 4875 2400 5225
+Wire Wire Line
+	2450 4975 2400 4975
+Connection ~ 2400 5075
+Wire Wire Line
+	2450 4875 2400 4875
+Connection ~ 2400 4975
+Wire Wire Line
+	2450 2775 2400 2775
+Wire Wire Line
+	2400 2625 2400 3075
+Wire Wire Line
+	2400 2875 2450 2875
+Wire Wire Line
+	2400 3075 2450 3075
+Connection ~ 2400 2875
+$Comp
+L VCC #PWR03
+U 1 1 58E9D470
+P 2400 2625
+F 0 "#PWR03" H 2400 2475 50  0001 C CNN
+F 1 "VCC" H 2400 2775 50  0000 C CNN
+F 2 "" H 2400 2625 50  0000 C CNN
+F 3 "" H 2400 2625 50  0000 C CNN
+	1    2400 2625
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR04
+U 1 1 58E9D75A
+P 6350 2575
+F 0 "#PWR04" H 6350 2425 50  0001 C CNN
+F 1 "VCC" H 6350 2725 50  0000 C CNN
+F 2 "" H 6350 2575 50  0000 C CNN
+F 3 "" H 6350 2575 50  0000 C CNN
+	1    6350 2575
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 58E9D7B6
+P 6350 2825
+F 0 "R3" V 6430 2825 50  0000 C CNN
+F 1 "R" V 6350 2825 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 6280 2825 50  0001 C CNN
+F 3 "" H 6350 2825 50  0000 C CNN
+	1    6350 2825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 2975 6350 3075
+Wire Wire Line
+	6350 2675 6350 2575
+$Comp
+L R R2
+U 1 1 58E9DF27
+P 5850 4025
+F 0 "R2" V 5930 4025 50  0000 C CNN
+F 1 "R" V 5850 4025 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 5780 4025 50  0001 C CNN
+F 3 "" H 5850 4025 50  0000 C CNN
+	1    5850 4025
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6000 4025 6050 4025
+Wire Wire Line
+	5700 4025 5650 4025
+$Comp
+L R R1
+U 1 1 58E9E2E0
+P 4650 4225
+F 0 "R1" V 4730 4225 50  0000 C CNN
+F 1 "R" V 4650 4225 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 4580 4225 50  0001 C CNN
+F 3 "" H 4650 4225 50  0000 C CNN
+	1    4650 4225
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4350 4225 4500 4225
+$Comp
+L VCC #PWR05
+U 1 1 58E9E9D6
+P 4850 4175
+F 0 "#PWR05" H 4850 4025 50  0001 C CNN
+F 1 "VCC" H 4850 4325 50  0000 C CNN
+F 2 "" H 4850 4175 50  0000 C CNN
+F 3 "" H 4850 4175 50  0000 C CNN
+	1    4850 4175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 4175 4850 4225
+Connection ~ 2400 2775
+$Comp
+L VCC #PWR06
+U 1 1 58E9F6EA
+P 1500 2775
+F 0 "#PWR06" H 1500 2625 50  0001 C CNN
+F 1 "VCC" H 1500 2925 50  0000 C CNN
+F 2 "" H 1500 2775 50  0000 C CNN
+F 3 "" H 1500 2775 50  0000 C CNN
+	1    1500 2775
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 58E9F76A
+P 1500 3275
+F 0 "#PWR07" H 1500 3025 50  0001 C CNN
+F 1 "GND" H 1500 3125 50  0000 C CNN
+F 2 "" H 1500 3275 50  0000 C CNN
+F 3 "" H 1500 3275 50  0000 C CNN
+	1    1500 3275
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 58E9F7C5
+P 1500 3025
+F 0 "C1" H 1525 3125 50  0000 L CNN
+F 1 "C" H 1525 2925 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 1538 2875 50  0001 C CNN
+F 3 "" H 1500 3025 50  0000 C CNN
+	1    1500 3025
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 58E9FDA2
+P 1750 3025
+F 0 "C2" H 1775 3125 50  0000 L CNN
+F 1 "C" H 1775 2925 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 1788 2875 50  0001 C CNN
+F 3 "" H 1750 3025 50  0000 C CNN
+	1    1750 3025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 2775 1500 2875
+Wire Wire Line
+	1500 2825 1750 2825
+Wire Wire Line
+	1750 2825 1750 2875
+Connection ~ 1500 2825
+Wire Wire Line
+	1500 3175 1500 3275
+Wire Wire Line
+	1500 3225 1750 3225
+Wire Wire Line
+	1750 3225 1750 3175
+Connection ~ 1500 3225
+$Comp
+L CONN_01X06 P1
+U 1 1 58EA0A59
+P 5450 2375
+F 0 "P1" H 5450 2725 50  0000 C CNN
+F 1 "CONN_01X06" V 5550 2375 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x06_Pitch2.54mm" H 5450 2375 50  0001 C CNN
+F 3 "" H 5450 2375 50  0000 C CNN
+	1    5450 2375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 4275 6350 4225
+$Comp
+L GND #PWR08
+U 1 1 58EA0BD9
+P 4750 2175
+F 0 "#PWR08" H 4750 1925 50  0001 C CNN
+F 1 "GND" H 4750 2025 50  0000 C CNN
+F 2 "" H 4750 2175 50  0000 C CNN
+F 3 "" H 4750 2175 50  0000 C CNN
+	1    4750 2175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 2125 4750 2125
+Wire Wire Line
+	4750 2125 4750 2175
+$Comp
+L VCC #PWR09
+U 1 1 58EA0DC0
+P 5050 2075
+F 0 "#PWR09" H 5050 1925 50  0001 C CNN
+F 1 "VCC" H 5050 2225 50  0000 C CNN
+F 2 "" H 5050 2075 50  0000 C CNN
+F 3 "" H 5050 2075 50  0000 C CNN
+	1    5050 2075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 2075 5050 2225
+Wire Wire Line
+	5050 2225 5250 2225
+Text GLabel 5150 2325 0    39   Input ~ 0
+PB4
+Text GLabel 5150 2425 0    39   Input ~ 0
+PB5
+Text GLabel 4800 4325 2    39   Input ~ 0
+RESET
+Wire Wire Line
+	4850 4225 4800 4225
+Wire Wire Line
+	4800 4325 4400 4325
+Wire Wire Line
+	4400 4325 4400 4225
+Connection ~ 4400 4225
+Text GLabel 5150 2525 0    39   Input ~ 0
+RESET
+Text GLabel 5150 2625 0    39   Input ~ 0
+PB3
+Wire Wire Line
+	5250 2325 5150 2325
+Wire Wire Line
+	5250 2425 5150 2425
+Wire Wire Line
+	5250 2525 5150 2525
+Wire Wire Line
+	5250 2625 5150 2625
+$Comp
+L Jumper_NO_Small JP1
+U 1 1 58EA2C2A
+P 6850 3225
+F 0 "JP1" H 6850 3305 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 6860 3165 50  0001 C CNN
+F 2 ".pretty:net_tie_open" H 6850 3225 50  0001 C CNN
+F 3 "" H 6850 3225 50  0000 C CNN
+	1    6850 3225
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper_NO_Small JP2
+U 1 1 58EA2CDE
+P 6350 3575
+F 0 "JP2" H 6350 3655 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 6360 3515 50  0001 C CNN
+F 2 ".pretty:net_tie_open" H 6350 3575 50  0001 C CNN
+F 3 "" H 6350 3575 50  0000 C CNN
+	1    6350 3575
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6350 3775 6850 3775
+Connection ~ 6350 3775
+Wire Wire Line
+	6350 3475 6350 3375
+Wire Wire Line
+	6850 3325 6850 3475
+Connection ~ 6350 3425
+Connection ~ 6850 3425
+Wire Wire Line
+	6850 3025 6850 3125
+Wire Wire Line
+	6350 3025 6850 3025
+Connection ~ 6350 3025
+$Comp
+L Jumper_NC_Small JP3
+U 1 1 58EA375F
+P 6600 3425
+F 0 "JP3" H 6600 3505 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 6610 3365 50  0001 C CNN
+F 2 ".pretty:net_tie_closed" H 6600 3425 50  0001 C CNN
+F 3 "" H 6600 3425 50  0000 C CNN
+	1    6600 3425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 3425 6350 3425
+Wire Wire Line
+	6700 3425 6850 3425
+Wire Wire Line
+	4350 4675 4450 4675
+Text GLabel 4450 4675 2    39   Input ~ 0
+PD3
+Text GLabel 5650 4025 0    39   Input ~ 0
+PD3
+Text GLabel 4450 4375 2    39   Input ~ 0
+PD0
+Text GLabel 4450 4475 2    39   Input ~ 0
+PD1
+Text GLabel 4450 4575 2    39   Input ~ 0
+PD2
+Text GLabel 4450 4775 2    39   Input ~ 0
+PD4
+Text GLabel 4450 4875 2    39   Input ~ 0
+PD5
+Text GLabel 4450 4975 2    39   Input ~ 0
+PD6
+Text GLabel 4450 5075 2    39   Input ~ 0
+PD7
+Wire Wire Line
+	4450 4375 4350 4375
+Wire Wire Line
+	4450 4475 4350 4475
+Wire Wire Line
+	4450 4575 4350 4575
+Wire Wire Line
+	4450 4775 4350 4775
+Wire Wire Line
+	4350 4875 4450 4875
+Wire Wire Line
+	4450 4975 4350 4975
+Wire Wire Line
+	4350 5075 4450 5075
+$Comp
+L ATMEGA328-P IC1
+U 1 1 58EAE4C2
+P 3350 3875
+F 0 "IC1" H 2600 5125 50  0000 L BNN
+F 1 "ATMEGA328-P" H 3750 2475 50  0000 L BNN
+F 2 "Housings_DIP:DIP-28_W7.62mm" H 3350 3875 50  0001 C CIN
+F 3 "" H 3350 3875 50  0000 C CNN
+	1    3350 3875
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X03 P2
+U 1 1 58EB4F72
+P 5450 3275
+F 0 "P2" H 5450 3475 50  0000 C CNN
+F 1 "CONN_01X03" V 5550 3275 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x03_Pitch2.54mm" H 5450 3275 50  0001 C CNN
+F 3 "" H 5450 3275 50  0000 C CNN
+	1    5450 3275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 3175 5250 3175
+Wire Wire Line
+	5100 3275 5250 3275
+$Comp
+L VCC #PWR010
+U 1 1 58EB5541
+P 5950 2925
+F 0 "#PWR010" H 5950 2775 50  0001 C CNN
+F 1 "VCC" H 5950 3075 50  0000 C CNN
+F 2 "" H 5950 2925 50  0000 C CNN
+F 3 "" H 5950 2925 50  0000 C CNN
+	1    5950 2925
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D3
+U 1 1 58EB566A
+P 5350 2975
+F 0 "D3" H 5350 3075 50  0000 C CNN
+F 1 "LED" H 5350 2875 50  0000 C CNN
+F 2 "LEDs:LED_0805" H 5350 2975 50  0001 C CNN
+F 3 "" H 5350 2975 50  0000 C CNN
+	1    5350 2975
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 58EB589E
+P 5700 2975
+F 0 "R4" V 5780 2975 50  0000 C CNN
+F 1 "R" V 5700 2975 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 5630 2975 50  0001 C CNN
+F 3 "" H 5700 2975 50  0000 C CNN
+	1    5700 2975
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5200 2975 5150 2975
+Wire Wire Line
+	5150 2975 5150 3175
+Connection ~ 5150 3175
+Wire Wire Line
+	5250 3375 5150 3375
+Wire Wire Line
+	5150 3375 5150 3525
+Wire Wire Line
+	5150 3525 5950 3525
+Wire Wire Line
+	5950 2925 5950 3725
+Wire Wire Line
+	5850 2975 5950 2975
+Connection ~ 5950 2975
+Wire Wire Line
+	5550 2975 5500 2975
+Text GLabel 5100 3175 0    39   Input ~ 0
+PD1
+Text GLabel 5100 3275 0    39   Input ~ 0
+PD0
+$Comp
+L R R5
+U 1 1 58EB792B
+P 5700 3725
+F 0 "R5" V 5780 3725 50  0000 C CNN
+F 1 "R" V 5700 3725 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 5630 3725 50  0001 C CNN
+F 3 "" H 5700 3725 50  0000 C CNN
+	1    5700 3725
+	0    1    1    0   
+$EndComp
+$Comp
+L LED D4
+U 1 1 58EB79E6
+P 5350 3725
+F 0 "D4" H 5350 3825 50  0000 C CNN
+F 1 "LED" H 5350 3625 50  0000 C CNN
+F 2 "LEDs:LED_0805" H 5350 3725 50  0001 C CNN
+F 3 "" H 5350 3725 50  0000 C CNN
+	1    5350 3725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 3725 5500 3725
+Wire Wire Line
+	5950 3725 5850 3725
+Connection ~ 5950 3525
+Wire Wire Line
+	5200 3725 5150 3725
+Text GLabel 5150 3725 0    39   Input ~ 0
+PD2
+$Comp
+L C C3
+U 1 1 58EBA70C
+P 5500 4625
+F 0 "C3" H 5525 4725 50  0000 L CNN
+F 1 "C" H 5525 4525 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 5538 4475 50  0001 C CNN
+F 3 "" H 5500 4625 50  0000 C CNN
+	1    5500 4625
+	1    0    0    -1  
+$EndComp
+Text GLabel 5450 4825 0    39   Input ~ 0
+PD0
+$Comp
+L VCC #PWR011
+U 1 1 58EBA890
+P 5500 4425
+F 0 "#PWR011" H 5500 4275 50  0001 C CNN
+F 1 "VCC" H 5500 4575 50  0000 C CNN
+F 2 "" H 5500 4425 50  0000 C CNN
+F 3 "" H 5500 4425 50  0000 C CNN
+	1    5500 4425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 4825 5500 4825
+Wire Wire Line
+	5500 4825 5500 4775
+Wire Wire Line
+	5500 4475 5500 4425
+$EndSCHEMATC

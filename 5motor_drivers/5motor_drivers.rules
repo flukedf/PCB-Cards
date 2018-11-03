@@ -1,0 +1,121 @@
+
+(rules PCB 5motor_drivers
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 8606)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 3.6)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.4)
+    )
+  )
+  (rule
+    (width 700.0)
+    (clear 200.2)
+    (clear 350.0 (type smd_to_turn_gap))
+    (clear 50.0 (type smd_smd))
+  )
+  (padstack "Via[0-1]_500:400_um"
+    (shape
+      (circle F.Cu 500.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 500.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_500:400_um" "Via[0-1]_500:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_500:400_um-kicad_default" "Via[0-1]_500:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_500:400_um-potencia" "Via[0-1]_500:400_um" potencia
+  )
+  (via 
+    "Via[0-1]_800:400_um-potencia" "Via[0-1]_800:400_um" potencia
+  )
+  (via_rule
+    default "Via[0-1]_500:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_500:400_um-kicad_default"
+  )
+  (via_rule
+    potencia "Via[0-1]_800:400_um-potencia"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 700.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    "SIGNAL_03" "SIGNAL_01" "SIGNAL_02" "SIGNAL_04" "SIGNAL_05" GND "Net-(Q1-Pad1)" "Net-(Q2-Pad1)"
+    "Net-(Q3-Pad1)" "Net-(Q4-Pad1)" "Net-(Q5-Pad1)" "Net-(R1-Pad1)" "Net-(R2-Pad1)" "Net-(R3-Pad1)" Q1 Q3
+    Q2 Q4 Q5 Q6 Q7 Q8 S1 S2
+    S3 S4 S5 S6 S7 S8 +5Vcc SCL
+    SDA IN08 IN07 IN06 IN05 IN04 IN03 IN02
+    IN01 "Net-(Q6-Pad1)" "Net-(Q7-Pad1)" "Net-(Q8-Pad1)" "Net-(R4-Pad1)" "Net-(R10-Pad1)" "Net-(R11-Pad1)" "Net-(R12-Pad1)"
+    "SIGNAL_06" "SIGNAL_07" "SIGNAL_08" "Net-(J2-Pad1)" "Net-(J5-Pad1)" "Net-(J6-Pad1)" "Net-(J7-Pad1)" "Net-(D25-Pad1)"
+    "Net-(J3-Pad1)" "Net-(J4-Pad1)" "Net-(R9-Pad1)" "Net-(D9-Pad2)" "Net-(D10-Pad2)" "Net-(D11-Pad2)" "Net-(D12-Pad2)" "Net-(D13-Pad2)"
+    "Net-(D14-Pad2)" "Net-(D15-Pad2)" "Net-(D16-Pad2)" "Net-(D17-Pad2)" "Net-(D18-Pad2)" "Net-(D19-Pad2)" "Net-(D20-Pad2)" "Net-(D21-Pad2)"
+    "Net-(D22-Pad2)" "Net-(D23-Pad2)" "Net-(D24-Pad2)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 700.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class potencia
+    "MOTOR_01-" "MOTOR_03-" "MOTOR_02-" "MOTOR_04-" "MOTOR_05-" "MOTOR_06-" "MOTOR_08-" "MOTOR_07-"
+    GNDPWR +24V
+    (clearance_class potencia)
+    (via_rule potencia)
+    (rule
+      (width 1200.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

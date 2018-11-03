@@ -1,0 +1,18 @@
+Información: Leyendo el archivo de lista de redes "C:\Users\Eduardo Hernandez\Documents\PCBs\CtoFza_RGB\drive_motor\drive_motor.net".
+
+Información: Utilizando referencias para combinar componentes y huellas.
+
+Información: Comprobando la huella del componente de la red "D1:/576ACAE7:Diodes_ThroughHole:Diode_DO-35_SOD27_Horizontal_RM10".
+
+Información: Comprobando la huella del componente de la red "P1:/576AE373:Terminal_Blocks:TerminalBlock_Pheonix_MKDS1.5-2pol".
+
+Información: Comprobando la huella del componente de la red "P2:/576B05B1:Terminal_Blocks:TerminalBlock_Pheonix_MKDS1.5-4pol".
+
+Información: Comprobando la huella del componente de la red "Q1:/576ACB5C:TO_SOT_Packages_THT:TO-220_Neutral123_Horizontal".
+
+Información: Comprobando la huella del componente de la red "R1:/576AAD86:Resistors_ThroughHole:Resistor_Horizontal_RM10mm".
+
+Información: Comprobando la huella del componente de la red "R2:/576ACC33:Resistors_ThroughHole:Resistor_Horizontal_RM10mm".
+
+Información: Comprobando la huella del componente de la red "U1:/576AAC63:Housings_DIP:DIP-4_W7.62mm".
+

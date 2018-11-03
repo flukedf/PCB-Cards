@@ -1,0 +1,188 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L R R1
+U 1 1 568AF95B
+P 3950 2550
+F 0 "R1" V 4030 2550 50  0000 C CNN
+F 1 "R" V 3950 2550 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 3880 2550 50  0001 C CNN
+F 3 "" H 3950 2550 50  0000 C CNN
+	1    3950 2550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R2
+U 1 1 568AFB1E
+P 4650 1900
+F 0 "R2" V 4750 1900 50  0000 C CNN
+F 1 "R" V 4650 1900 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 4580 1900 50  0001 C CNN
+F 3 "" H 4650 1900 50  0000 C CNN
+	1    4650 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR01
+U 1 1 568AFC14
+P 4650 1650
+F 0 "#PWR01" H 4650 1500 50  0001 C CNN
+F 1 "+5V" H 4650 1790 50  0000 C CNN
+F 2 "" H 4650 1650 50  0000 C CNN
+F 3 "" H 4650 1650 50  0000 C CNN
+	1    4650 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 568AFC94
+P 4650 2850
+F 0 "#PWR02" H 4650 2600 50  0001 C CNN
+F 1 "GND" H 4650 2700 50  0000 C CNN
+F 2 "" H 4650 2850 50  0000 C CNN
+F 3 "" H 4650 2850 50  0000 C CNN
+	1    4650 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P2
+U 1 1 568AFD03
+P 3200 2550
+F 0 "P2" H 3200 2650 50  0000 C CNN
+F 1 "CONN_01X01" V 3300 2550 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x01" H 3200 2550 50  0001 C CNN
+F 3 "" H 3200 2550 50  0000 C CNN
+	1    3200 2550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4650 2350 4650 2050
+Wire Wire Line
+	4100 2550 4350 2550
+Wire Wire Line
+	3400 2550 3800 2550
+Wire Wire Line
+	4650 1650 4650 1750
+$Comp
+L CONN_01X02 P1
+U 1 1 568B0D13
+P 3100 2000
+F 0 "P1" H 3100 2150 50  0000 C CNN
+F 1 "CONN_01X02" V 3200 2000 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x02" H 3100 2000 50  0001 C CNN
+F 3 "" H 3100 2000 50  0000 C CNN
+	1    3100 2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L +5V #PWR03
+U 1 1 568B0DA0
+P 3350 1850
+F 0 "#PWR03" H 3350 1700 50  0001 C CNN
+F 1 "+5V" H 3350 1990 50  0000 C CNN
+F 2 "" H 3350 1850 50  0000 C CNN
+F 3 "" H 3350 1850 50  0000 C CNN
+	1    3350 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 568B0DCD
+P 3400 2100
+F 0 "#PWR04" H 3400 1850 50  0001 C CNN
+F 1 "GND" H 3400 1950 50  0000 C CNN
+F 2 "" H 3400 2100 50  0000 C CNN
+F 3 "" H 3400 2100 50  0000 C CNN
+	1    3400 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 1950 3550 1950
+Wire Wire Line
+	3350 1950 3350 1850
+Wire Wire Line
+	3400 2100 3400 2050
+Wire Wire Line
+	3300 2050 3700 2050
+Wire Wire Line
+	4650 2750 4650 2850
+$Comp
+L PWR_FLAG #FLG05
+U 1 1 568BDCCA
+P 3550 1850
+F 0 "#FLG05" H 3550 1945 50  0001 C CNN
+F 1 "PWR_FLAG" H 3550 2030 50  0000 C CNN
+F 2 "" H 3550 1850 50  0000 C CNN
+F 3 "" H 3550 1850 50  0000 C CNN
+	1    3550 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 1950 3550 1850
+Connection ~ 3350 1950
+$Comp
+L PWR_FLAG #FLG06
+U 1 1 568BDD36
+P 3700 2050
+F 0 "#FLG06" H 3700 2145 50  0001 C CNN
+F 1 "PWR_FLAG" H 3700 2230 50  0000 C CNN
+F 2 "" H 3700 2050 50  0000 C CNN
+F 3 "" H 3700 2050 50  0000 C CNN
+	1    3700 2050
+	-1   0    0    1   
+$EndComp
+Connection ~ 3400 2050
+$Comp
+L Q_NMOS_DGS Q1
+U 1 1 568BEAED
+P 4550 2550
+F 0 "Q1" H 4850 2600 50  0000 R CNN
+F 1 "Q_NMOS_DGS" H 5200 2500 50  0000 R CNN
+F 2 "TO_SOT_Packages_THT:TO-220_Neutral123_Vertical" H 4750 2650 50  0001 C CNN
+F 3 "" H 4550 2550 50  0000 C CNN
+	1    4550 2550
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

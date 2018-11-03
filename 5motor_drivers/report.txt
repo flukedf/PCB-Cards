@@ -1,0 +1,232 @@
+Información: Leyendo el archivo de lista de redes "C:\Users\Eduardo\Documents\PCBs\5motor_drivers\5motor_drivers.net".
+
+Información: Utilizando referencias para combinar componentes y huellas.
+
+Información: Comprobando la huella del componente de la red "C1:/5BA2AEC4:Capacitors_SMD:C_1206_HandSoldering".
+
+Información: Comprobando la huella del componente de la red "C2:/5BA1FB41:Capacitors_SMD:C_1206_HandSoldering".
+
+Información: Comprobando la huella del componente de la red "C3:/5BA3FF92:Capacitors_SMD:C_1206_HandSoldering".
+
+Información: Comprobando la huella del componente de la red "C4:/5BA34B92:Capacitors_SMD:C_1206_HandSoldering".
+
+Información: Comprobando la huella del componente de la red "D1:/5B8CE0F0:w_smd_diode:do214ac".
+
+Información: Comprobando la huella del componente de la red "D2:/5B8CDF87:w_smd_diode:do214ac".
+
+Información: Comprobando la huella del componente de la red "D3:/5B8CD7B8:w_smd_diode:do214ac".
+
+Información: Comprobando la huella del componente de la red "D4:/5B8C96A4:w_smd_diode:do214ac".
+
+Información: Comprobando la huella del componente de la red "D5:/5B8E7A11:w_smd_diode:do214ac".
+
+Información: Comprobando la huella del componente de la red "D6:/5B8E6F96:w_smd_diode:do214ac".
+
+Información: Comprobando la huella del componente de la red "D7:/5B8E6BC8:w_smd_diode:do214ac".
+
+Información: Comprobando la huella del componente de la red "D8:/5B8CE22C:w_smd_diode:do214ac".
+
+Información: Comprobando la huella del componente de la red "D9:/5B8E6068:w_smd_leds:Led_PLCC2_3528".
+
+Información: Comprobando la huella del componente de la red "D10:/5B8E5FE8:w_smd_leds:Led_PLCC2_3528".
+
+Información: Comprobando la huella del componente de la red "D11:/5B8D48FF:w_smd_leds:Led_PLCC2_3528".
+
+Información: Comprobando la huella del componente de la red "D12:/5B8E5F74:w_smd_leds:Led_PLCC2_3528".
+
+Información: Comprobando la huella del componente de la red "D13:/5B8E60E4:w_smd_leds:Led_PLCC2_3528".
+
+Información: Comprobando la huella del componente de la red "D14:/5B8F552B:w_smd_leds:Led_PLCC2_3528".
+
+Información: Comprobando la huella del componente de la red "D15:/5B8F5537:w_smd_leds:Led_PLCC2_3528".
+
+Información: Comprobando la huella del componente de la red "D16:/5B8F5543:w_smd_leds:Led_PLCC2_3528".
+
+Información: Comprobando la huella del componente de la red "D17:/5B9E6241:w_smd_leds:Led_PLCC2_3528".
+
+Información: Comprobando la huella del componente de la red "D18:/5B9E6235:w_smd_leds:Led_PLCC2_3528".
+
+Información: Comprobando la huella del componente de la red "D19:/5B9E621D:w_smd_leds:Led_PLCC2_3528".
+
+Información: Comprobando la huella del componente de la red "D20:/5B9E6229:w_smd_leds:Led_PLCC2_3528".
+
+Información: Comprobando la huella del componente de la red "D21:/5B9E624D:w_smd_leds:Led_PLCC2_3528".
+
+Información: Comprobando la huella del componente de la red "D22:/5B9E625F:w_smd_leds:Led_PLCC2_3528".
+
+Información: Comprobando la huella del componente de la red "D23:/5B9E626B:w_smd_leds:Led_PLCC2_3528".
+
+Información: Comprobando la huella del componente de la red "D24:/5B9E6277:w_smd_leds:Led_PLCC2_3528".
+
+Información: Comprobando la huella del componente de la red "D25:/5B8F5B18:w_smd_leds:Led_PLCC2_3528".
+
+Información: Comprobando la huella del componente de la red "J1:/5B93A6A7:w_conn_mkds:mkds_1,5-4".
+
+Información: Comprobando la huella del componente de la red "J2:/5B999C64:w_pin_strip:pin_strip_2".
+
+Información: Comprobando la huella del componente de la red "J3:/5B999C5E:w_pin_strip:pin_strip_2".
+
+Información: Comprobando la huella del componente de la red "J4:/5B999C58:w_pin_strip:pin_strip_2".
+
+Información: Comprobando la huella del componente de la red "J5:/5B9748B1:w_pin_strip:pin_strip_2".
+
+Información: Comprobando la huella del componente de la red "J6:/5B9747C5:w_pin_strip:pin_strip_2".
+
+Información: Comprobando la huella del componente de la red "J7:/5B973EAC:w_pin_strip:pin_strip_2".
+
+Información: Comprobando la huella del componente de la red "J8:/5B91A962:w_conn_mkds:mkds_1,5-16".
+
+Información: Comprobando la huella del componente de la red "J9:/5B97ADDC:w_conn_mkds:mkds_1,5-16".
+
+Información: Comprobando la huella del componente de la red "J10:/5B91B807:w_conn_mkds:mkds_1,5-2".
+
+Información: Comprobando la huella del componente de la red "Q1:/5B8CE0F6:TO_SOT_Packages_SMD:TO-263-3Lead".
+
+Información: Comprobando la huella del componente de la red "Q2:/5B8CDF8D:TO_SOT_Packages_SMD:TO-263-3Lead".
+
+Información: Comprobando la huella del componente de la red "Q3:/5B8CD7BE:TO_SOT_Packages_SMD:TO-263-3Lead".
+
+Información: Comprobando la huella del componente de la red "Q4:/5B8C96A5:TO_SOT_Packages_SMD:TO-263-3Lead".
+
+Información: Comprobando la huella del componente de la red "Q5:/5B8E7A17:TO_SOT_Packages_SMD:TO-263-3Lead".
+
+Información: Comprobando la huella del componente de la red "Q6:/5B8E6F9C:TO_SOT_Packages_SMD:TO-263-3Lead".
+
+Información: Comprobando la huella del componente de la red "Q7:/5B8E6BCE:TO_SOT_Packages_SMD:TO-263-3Lead".
+
+Información: Comprobando la huella del componente de la red "Q8:/5B8CE232:TO_SOT_Packages_SMD:TO-263-3Lead".
+
+Información: Comprobando la huella del componente de la red "R1:/5B8CE0EA:Resistors_SMD:R_1206_HandSoldering".
+
+Información: Comprobando la huella del componente de la red "R2:/5B8CDF81:Resistors_SMD:R_1206_HandSoldering".
+
+Información: Comprobando la huella del componente de la red "R3:/5B8CD7B2:Resistors_SMD:R_1206_HandSoldering".
+
+Información: Comprobando la huella del componente de la red "R4:/5B8C96A3:Resistors_SMD:R_1206_HandSoldering".
+
+Información: Comprobando la huella del componente de la red "R5:/5B8CE108:Resistors_SMD:R_1206_HandSoldering".
+
+Información: Comprobando la huella del componente de la red "R6:/5B8CDF9F:Resistors_SMD:R_1206_HandSoldering".
+
+Información: Comprobando la huella del componente de la red "R7:/5B8CD7D0:Resistors_SMD:R_1206_HandSoldering".
+
+Información: Comprobando la huella del componente de la red "R8:/5B8C96A8:Resistors_SMD:R_1206_HandSoldering".
+
+Información: Comprobando la huella del componente de la red "R9:/5B8E7A0B:Resistors_SMD:R_1206_HandSoldering".
+
+Información: Comprobando la huella del componente de la red "R10:/5B8E6F90:Resistors_SMD:R_1206_HandSoldering".
+
+Información: Comprobando la huella del componente de la red "R11:/5B8E6BC2:Resistors_SMD:R_1206_HandSoldering".
+
+Información: Comprobando la huella del componente de la red "R12:/5B8CE226:Resistors_SMD:R_1206_HandSoldering".
+
+Información: Comprobando la huella del componente de la red "R13:/5B8E7A23:Resistors_SMD:R_1206_HandSoldering".
+
+Información: Comprobando la huella del componente de la red "R14:/5B8E6FA8:Resistors_SMD:R_1206_HandSoldering".
+
+Información: Comprobando la huella del componente de la red "R15:/5B8E6BDA:Resistors_SMD:R_1206_HandSoldering".
+
+Información: Comprobando la huella del componente de la red "R16:/5B8CE244:Resistors_SMD:R_1206_HandSoldering".
+
+Información: Comprobando la huella del componente de la red "R17:/5B999C3F:Resistors_SMD:R_1206_HandSoldering".
+
+Información: Comprobando la huella del componente de la red "R18:/5B999C39:Resistors_SMD:R_1206_HandSoldering".
+
+Información: Comprobando la huella del componente de la red "R19:/5B8E606E:Resistors_SMD:R_1206_HandSoldering".
+
+Información: Comprobando la huella del componente de la red "R20:/5B953375:Resistors_SMD:R_1206_HandSoldering".
+
+Información: Comprobando la huella del componente de la red "R21:/5B949BD8:Resistors_SMD:R_1206_HandSoldering".
+
+Información: Comprobando la huella del componente de la red "R22:/5B8E5FEE:Resistors_SMD:R_1206_HandSoldering".
+
+Información: Comprobando la huella del componente de la red "R23:/5B8D4900:Resistors_SMD:R_1206_HandSoldering".
+
+Información: Comprobando la huella del componente de la red "R24:/5B8E5F7A:Resistors_SMD:R_1206_HandSoldering".
+
+Información: Comprobando la huella del componente de la red "R25:/5B8E60EA:Resistors_SMD:R_1206_HandSoldering".
+
+Información: Comprobando la huella del componente de la red "R26:/5B8F5531:Resistors_SMD:R_1206_HandSoldering".
+
+Información: Comprobando la huella del componente de la red "R27:/5B8F553D:Resistors_SMD:R_1206_HandSoldering".
+
+Información: Comprobando la huella del componente de la red "R28:/5B956D35:Resistors_SMD:R_1206_HandSoldering".
+
+Información: Comprobando la huella del componente de la red "R29:/5B956C48:Resistors_SMD:R_1206_HandSoldering".
+
+Información: Comprobando la huella del componente de la red "R30:/5B9567DA:Resistors_SMD:R_1206_HandSoldering".
+
+Información: Comprobando la huella del componente de la red "R31:/5B999C52:Resistors_SMD:R_1206_HandSoldering".
+
+Información: Comprobando la huella del componente de la red "R32:/5B999C4C:Resistors_SMD:R_1206_HandSoldering".
+
+Información: Comprobando la huella del componente de la red "R33:/5B999C46:Resistors_SMD:R_1206_HandSoldering".
+
+Información: Comprobando la huella del componente de la red "R34:/5B8F5549:Resistors_SMD:R_1206_HandSoldering".
+
+Información: Comprobando la huella del componente de la red "R35:/5B99ED4F:Resistors_SMD:R_1206_HandSoldering".
+
+Información: Comprobando la huella del componente de la red "R36:/5B99E203:Resistors_SMD:R_1206_HandSoldering".
+
+Información: Comprobando la huella del componente de la red "R37:/5B99E0EA:Resistors_SMD:R_1206_HandSoldering".
+
+Información: Comprobando la huella del componente de la red "R38:/5B99DFC8:Resistors_SMD:R_1206_HandSoldering".
+
+Información: Comprobando la huella del componente de la red "R39:/5B99DEA3:Resistors_SMD:R_1206_HandSoldering".
+
+Información: Comprobando la huella del componente de la red "R40:/5B99DD87:Resistors_SMD:R_1206_HandSoldering".
+
+Información: Comprobando la huella del componente de la red "R41:/5B99D6B6:Resistors_SMD:R_1206_HandSoldering".
+
+Información: Comprobando la huella del componente de la red "R42:/5B99D562:Resistors_SMD:R_1206_HandSoldering".
+
+Información: Comprobando la huella del componente de la red "R43:/5B9E6247:Resistors_SMD:R_1206_HandSoldering".
+
+Información: Comprobando la huella del componente de la red "R44:/5B9E623B:Resistors_SMD:R_1206_HandSoldering".
+
+Información: Comprobando la huella del componente de la red "R45:/5B9E6223:Resistors_SMD:R_1206_HandSoldering".
+
+Información: Comprobando la huella del componente de la red "R46:/5B9E622F:Resistors_SMD:R_1206_HandSoldering".
+
+Información: Comprobando la huella del componente de la red "R47:/5B9E6253:Resistors_SMD:R_1206_HandSoldering".
+
+Información: Comprobando la huella del componente de la red "R48:/5B9E6265:Resistors_SMD:R_1206_HandSoldering".
+
+Información: Comprobando la huella del componente de la red "R49:/5B9E6271:Resistors_SMD:R_1206_HandSoldering".
+
+Información: Comprobando la huella del componente de la red "R50:/5B9E627D:Resistors_SMD:R_1206_HandSoldering".
+
+Información: Comprobando la huella del componente de la red "R51:/5B8F5B1E:Resistors_SMD:R_1206_HandSoldering".
+
+Información: Comprobando la huella del componente de la red "U1:/5B8CE0E4:Housings_DIP:DIP-4_W7.62mm".
+
+Información: Comprobando la huella del componente de la red "U2:/5B8CDF7B:Housings_DIP:DIP-4_W7.62mm".
+
+Información: Comprobando la huella del componente de la red "U3:/5B8CD7AC:Housings_DIP:DIP-4_W7.62mm".
+
+Información: Comprobando la huella del componente de la red "U4:/5B8C96A2:Housings_DIP:DIP-4_W7.62mm".
+
+Información: Comprobando la huella del componente de la red "U5:/5B8E7A05:Housings_DIP:DIP-4_W7.62mm".
+
+Información: Comprobando la huella del componente de la red "U6:/5B8E6F8A:Housings_DIP:DIP-4_W7.62mm".
+
+Información: Comprobando la huella del componente de la red "U7:/5B8E6BBC:Housings_DIP:DIP-4_W7.62mm".
+
+Información: Comprobando la huella del componente de la red "U8:/5B8CE220:Housings_DIP:DIP-4_W7.62mm".
+
+Información: Comprobando la huella del componente de la red "U9:/5B999C25:w_pth_circuits:dil_16-300".
+
+Cambiando del componente "U9:/5B999C25" el nombre de la red del pin "13" de "" a "Net-(U9-Pad13)".
+
+Información: Comprobando la huella del componente de la red "U10:/5B935D5A:w_pth_circuits:dil_16-300".
+
+Cambiando del componente "U10:/5B935D5A" el nombre de la red del pin "13" de "" a "Net-(U10-Pad13)".
+
+Información: Comprobando la huella del componente de la red "U11:/5B9F1A9A:Housings_DIP:DIP-20_W7.62mm".
+
+Información: Comprobando la huella del componente de la red "U12:/5B8DD4ED:Housings_DIP:DIP-20_W7.62mm".
+
+Eliminar la red "Net-(U10-Pad13)" de un solo pad en "U10" pad '13'
+
+Eliminar la red "Net-(U9-Pad13)" de un solo pad en "U9" pad '13'
+

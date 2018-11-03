@@ -1,0 +1,540 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Leds_port-cache
+EELAYER 25 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "Control Motores Vending 8 Puertos"
+Date "2018-09-03"
+Rev "Version 1.0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L PWR_FLAG #FLG01
+U 1 1 5B92A5C9
+P 2280 3470
+F 0 "#FLG01" H 2280 3545 50  0001 C CNN
+F 1 "PWR_FLAG" H 2280 3590 20  0000 C CNN
+F 2 "" H 2280 3470 50  0001 C CNN
+F 3 "" H 2280 3470 50  0001 C CNN
+	1    2280 3470
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR02
+U 1 1 5B92A5CB
+P 2130 3470
+F 0 "#PWR02" H 2130 3320 50  0001 C CNN
+F 1 "VCC" H 2130 3600 39  0000 C CNN
+F 2 "" H 2130 3470 50  0001 C CNN
+F 3 "" H 2130 3470 50  0001 C CNN
+	1    2130 3470
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG03
+U 1 1 5B92A5CC
+P 2450 3670
+F 0 "#FLG03" H 2450 3745 50  0001 C CNN
+F 1 "PWR_FLAG" H 2450 3790 20  0000 C CNN
+F 2 "" H 2450 3670 50  0001 C CNN
+F 3 "" H 2450 3670 50  0001 C CNN
+	1    2450 3670
+	1    0    0    -1  
+$EndComp
+Text GLabel 1890 1860 2    39   Output ~ 0
++5Vcc
+Text GLabel 1890 1960 2    39   Output ~ 0
+GND
+Text GLabel 2060 3580 0    39   Input ~ 0
++5Vcc
+Text GLabel 2060 3720 0    39   Input ~ 0
+GND
+$Comp
+L LED-RESCUE-Modulo_I2C_v2.0 D3
+U 1 1 5B92A61A
+P 5910 2530
+F 0 "D3" H 5910 2600 39  0000 C CNN
+F 1 "LED" H 5910 2460 39  0000 C CNN
+F 2 "w_smd_leds:Led_PLCC2_3528" H 5910 2530 50  0001 C CNN
+F 3 "" H 5910 2530 50  0000 C CNN
+	1    5910 2530
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R3
+U 1 1 5B92A61B
+P 5560 2530
+F 0 "R3" V 5640 2530 50  0000 C CNN
+F 1 "330" V 5560 2530 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 5490 2530 50  0001 C CNN
+F 3 "" H 5560 2530 50  0000 C CNN
+	1    5560 2530
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED-RESCUE-Modulo_I2C_v2.0 D4
+U 1 1 5B92A61C
+P 5910 2720
+F 0 "D4" H 5920 2790 39  0000 C CNN
+F 1 "LED" H 5910 2650 39  0000 C CNN
+F 2 "w_smd_leds:Led_PLCC2_3528" H 5910 2720 50  0001 C CNN
+F 3 "" H 5910 2720 50  0000 C CNN
+	1    5910 2720
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R4
+U 1 1 5B92A61D
+P 5560 2720
+F 0 "R4" V 5640 2720 50  0000 C CNN
+F 1 "330" V 5560 2720 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 5490 2720 50  0001 C CNN
+F 3 "" H 5560 2720 50  0000 C CNN
+	1    5560 2720
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED-RESCUE-Modulo_I2C_v2.0 D2
+U 1 1 5B92A61E
+P 5910 2340
+F 0 "D2" H 5910 2410 39  0000 C CNN
+F 1 "LED" H 5910 2270 39  0000 C CNN
+F 2 "w_smd_leds:Led_PLCC2_3528" H 5910 2340 50  0001 C CNN
+F 3 "" H 5910 2340 50  0000 C CNN
+	1    5910 2340
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R2
+U 1 1 5B92A61F
+P 5560 2340
+F 0 "R2" V 5640 2340 50  0000 C CNN
+F 1 "330" V 5560 2340 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 5490 2340 50  0001 C CNN
+F 3 "" H 5560 2340 50  0000 C CNN
+	1    5560 2340
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED-RESCUE-Modulo_I2C_v2.0 D1
+U 1 1 5B92A620
+P 5910 2150
+F 0 "D1" H 5910 2220 39  0000 C CNN
+F 1 "LED" H 5910 2080 39  0000 C CNN
+F 2 "w_smd_leds:Led_PLCC2_3528" H 5910 2150 50  0001 C CNN
+F 3 "" H 5910 2150 50  0000 C CNN
+	1    5910 2150
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R1
+U 1 1 5B92A621
+P 5560 2150
+F 0 "R1" V 5640 2150 50  0000 C CNN
+F 1 "330" V 5560 2150 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 5490 2150 50  0001 C CNN
+F 3 "" H 5560 2150 50  0000 C CNN
+	1    5560 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED-RESCUE-Modulo_I2C_v2.0 D5
+U 1 1 5B92A622
+P 5910 2910
+F 0 "D5" H 5910 2990 39  0000 C CNN
+F 1 "LED" H 5910 2840 39  0000 C CNN
+F 2 "w_smd_leds:Led_PLCC2_3528" H 5910 2910 50  0001 C CNN
+F 3 "" H 5910 2910 50  0000 C CNN
+	1    5910 2910
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R5
+U 1 1 5B92A623
+P 5560 2910
+F 0 "R5" V 5640 2910 50  0000 C CNN
+F 1 "330" V 5560 2910 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 5490 2910 50  0001 C CNN
+F 3 "" H 5560 2910 50  0000 C CNN
+	1    5560 2910
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 5B92A624
+P 6210 3520
+F 0 "#PWR04" H 6210 3270 50  0001 C CNN
+F 1 "GND" H 6210 3370 50  0000 C CNN
+F 2 "" H 6210 3520 50  0001 C CNN
+F 3 "" H 6210 3520 50  0001 C CNN
+	1    6210 3520
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED-RESCUE-Modulo_I2C_v2.0 D6
+U 1 1 5B92A625
+P 5910 3110
+F 0 "D6" H 5910 3180 39  0000 C CNN
+F 1 "LED" H 5910 3040 39  0000 C CNN
+F 2 "w_smd_leds:Led_PLCC2_3528" H 5910 3110 50  0001 C CNN
+F 3 "" H 5910 3110 50  0000 C CNN
+	1    5910 3110
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R6
+U 1 1 5B92A626
+P 5560 3110
+F 0 "R6" V 5640 3110 50  0000 C CNN
+F 1 "330" V 5560 3110 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 5490 3110 50  0001 C CNN
+F 3 "" H 5560 3110 50  0000 C CNN
+	1    5560 3110
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED-RESCUE-Modulo_I2C_v2.0 D7
+U 1 1 5B92A627
+P 5910 3300
+F 0 "D7" H 5920 3370 39  0000 C CNN
+F 1 "LED" H 5910 3230 39  0000 C CNN
+F 2 "w_smd_leds:Led_PLCC2_3528" H 5910 3300 50  0001 C CNN
+F 3 "" H 5910 3300 50  0000 C CNN
+	1    5910 3300
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R7
+U 1 1 5B92A628
+P 5560 3300
+F 0 "R7" V 5640 3300 50  0000 C CNN
+F 1 "330" V 5560 3300 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 5490 3300 50  0001 C CNN
+F 3 "" H 5560 3300 50  0000 C CNN
+	1    5560 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED-RESCUE-Modulo_I2C_v2.0 D8
+U 1 1 5B92A629
+P 5910 3490
+F 0 "D8" H 5910 3570 39  0000 C CNN
+F 1 "LED" H 5910 3420 39  0000 C CNN
+F 2 "w_smd_leds:Led_PLCC2_3528" H 5910 3490 50  0001 C CNN
+F 3 "" H 5910 3490 50  0000 C CNN
+	1    5910 3490
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R8
+U 1 1 5B92A62A
+P 5560 3490
+F 0 "R8" V 5640 3490 50  0000 C CNN
+F 1 "330" V 5560 3490 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 5490 3490 50  0001 C CNN
+F 3 "" H 5560 3490 50  0000 C CNN
+	1    5560 3490
+	0    -1   -1   0   
+$EndComp
+Text GLabel 5410 2150 0    39   Input ~ 0
+S1
+Text GLabel 5410 2340 0    39   Input ~ 0
+S2
+Text GLabel 5410 2530 0    39   Input ~ 0
+S3
+Text GLabel 5410 2720 0    39   Input ~ 0
+S4
+Text GLabel 5410 2910 0    39   Input ~ 0
+S5
+Text GLabel 5410 3110 0    39   Input ~ 0
+S6
+Text GLabel 5410 3300 0    39   Input ~ 0
+S7
+Text GLabel 5410 3490 0    39   Input ~ 0
+S8
+Text GLabel 3500 2540 0    39   Input ~ 0
+IN01
+Text GLabel 3500 2640 0    39   Input ~ 0
+IN02
+Text GLabel 3500 2740 0    39   Input ~ 0
+IN03
+Text GLabel 3500 2840 0    39   Input ~ 0
+IN04
+Text GLabel 3500 2940 0    39   Input ~ 0
+IN05
+Text GLabel 4900 2540 2    39   Output ~ 0
+S1
+Text GLabel 4900 2640 2    39   Output ~ 0
+S2
+Text GLabel 4900 2740 2    39   Output ~ 0
+S3
+Text GLabel 4900 2840 2    39   Output ~ 0
+S4
+Text GLabel 4900 2940 2    39   Output ~ 0
+S5
+$Comp
+L GND #PWR05
+U 1 1 5B92A62B
+P 3350 3590
+F 0 "#PWR05" H 3350 3340 50  0001 C CNN
+F 1 "GND" H 3350 3440 50  0000 C CNN
+F 2 "" H 3350 3590 50  0000 C CNN
+F 3 "" H 3350 3590 50  0000 C CNN
+	1    3350 3590
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74LS244 U1
+U 1 1 5B92A62C
+P 4200 3040
+F 0 "U1" H 4250 2840 50  0000 C CNN
+F 1 "74LS244" H 4300 2640 50  0000 C CNN
+F 2 "Housings_DIP:DIP-20_W7.62mm" H 4200 3040 50  0001 C CNN
+F 3 "" H 4200 3040 50  0001 C CNN
+	1    4200 3040
+	1    0    0    -1  
+$EndComp
+Text GLabel 4900 3040 2    39   Output ~ 0
+S6
+Text GLabel 4900 3140 2    39   Output ~ 0
+S7
+Text GLabel 4900 3240 2    39   Output ~ 0
+S8
+Text GLabel 3500 3040 0    39   Input ~ 0
+IN06
+Text GLabel 3500 3140 0    39   Input ~ 0
+IN07
+Text GLabel 3500 3240 0    39   Input ~ 0
+IN08
+$Comp
+L C C1
+U 1 1 5B92A633
+P 3680 3690
+F 0 "C1" H 3705 3790 50  0000 L CNN
+F 1 "100nF" V 3640 3470 39  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 3718 3540 50  0001 C CNN
+F 3 "" H 3680 3690 50  0001 C CNN
+	1    3680 3690
+	0    1    1    0   
+$EndComp
+$Comp
+L VCC #PWR06
+U 1 1 5B92A634
+P 3900 3690
+F 0 "#PWR06" H 3900 3540 50  0001 C CNN
+F 1 "VCC" H 3900 3820 39  0000 C CNN
+F 2 "" H 3900 3690 50  0001 C CNN
+F 3 "" H 3900 3690 50  0001 C CNN
+	1    3900 3690
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-Modulo_I2C_v2.0 D9
+U 1 1 5B92A637
+P 3760 4230
+F 0 "D9" H 3760 4300 39  0000 C CNN
+F 1 "LED" H 3760 4160 39  0000 C CNN
+F 2 "w_smd_leds:Led_PLCC2_3528" H 3760 4230 50  0001 C CNN
+F 3 "" H 3760 4230 50  0000 C CNN
+	1    3760 4230
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R9
+U 1 1 5B92A638
+P 4110 4230
+F 0 "R9" V 4190 4230 50  0000 C CNN
+F 1 "330" V 4110 4230 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 4040 4230 50  0001 C CNN
+F 3 "" H 4110 4230 50  0000 C CNN
+	1    4110 4230
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 5B92A639
+P 4260 4230
+F 0 "#PWR07" H 4260 3980 50  0001 C CNN
+F 1 "GND" H 4260 4080 50  0000 C CNN
+F 2 "" H 4260 4230 50  0001 C CNN
+F 3 "" H 4260 4230 50  0001 C CNN
+	1    4260 4230
+	0    -1   -1   0   
+$EndComp
+$Comp
+L VCC #PWR08
+U 1 1 5B92A63A
+P 3560 4230
+F 0 "#PWR08" H 3560 4080 50  0001 C CNN
+F 1 "VCC" H 3560 4360 39  0000 C CNN
+F 2 "" H 3560 4230 50  0001 C CNN
+F 3 "" H 3560 4230 50  0001 C CNN
+	1    3560 4230
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3350 3540
+Wire Wire Line
+	3500 3440 3350 3440
+Wire Wire Line
+	3350 3540 3500 3540
+Wire Wire Line
+	3350 3440 3350 3590
+Connection ~ 6210 3490
+Wire Wire Line
+	6110 3490 6210 3490
+Connection ~ 6210 3110
+Wire Wire Line
+	6110 3110 6210 3110
+Connection ~ 6210 3300
+Wire Wire Line
+	6110 3300 6210 3300
+Connection ~ 6210 2910
+Wire Wire Line
+	6110 2910 6210 2910
+Connection ~ 6210 2720
+Wire Wire Line
+	6110 2720 6210 2720
+Connection ~ 6210 2340
+Wire Wire Line
+	6110 2340 6210 2340
+Connection ~ 6210 2530
+Wire Wire Line
+	6110 2150 6210 2150
+Wire Wire Line
+	6210 2150 6210 3520
+Wire Wire Line
+	6110 2530 6210 2530
+Connection ~ 2130 3580
+Wire Wire Line
+	2130 3470 2130 3580
+Wire Wire Line
+	2280 3580 2280 3470
+Wire Wire Line
+	2060 3580 2280 3580
+Wire Wire Line
+	3830 3690 3900 3690
+Wire Wire Line
+	3530 3690 3440 3690
+Wire Wire Line
+	3440 3690 3440 3540
+Connection ~ 3440 3540
+Wire Wire Line
+	2450 3670 2450 3720
+Connection ~ 2450 3720
+Wire Wire Line
+	2060 3720 2590 3720
+Wire Wire Line
+	2590 3720 2590 3670
+$Comp
+L GND #PWR09
+U 1 1 5B92A5CD
+P 2590 3670
+F 0 "#PWR09" H 2590 3420 50  0001 C CNN
+F 1 "GND" H 2590 3550 39  0000 C CNN
+F 2 "" H 2590 3670 50  0001 C CNN
+F 3 "" H 2590 3670 50  0001 C CNN
+	1    2590 3670
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X02 J1
+U 1 1 5B937BEB
+P 1690 1910
+F 0 "J1" H 1690 2060 50  0000 C CNN
+F 1 "POWER" V 1790 1910 50  0000 C CNN
+F 2 "w_conn_mkds:mkds_1,5-2" H 1690 1910 50  0001 C CNN
+F 3 "" H 1690 1910 50  0001 C CNN
+	1    1690 1910
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X08 J2
+U 1 1 5B937C6A
+P 1680 2680
+F 0 "J2" H 1680 3130 50  0000 C CNN
+F 1 "INPUT" V 1780 2680 50  0000 C CNN
+F 2 "w_conn_mkds:mkds_1,5-8" H 1680 2680 50  0001 C CNN
+F 3 "" H 1680 2680 50  0001 C CNN
+	1    1680 2680
+	-1   0    0    -1  
+$EndComp
+Text GLabel 1880 2330 2    39   Output ~ 0
+IN01
+Text GLabel 1880 2430 2    39   Output ~ 0
+IN02
+Text GLabel 1880 2530 2    39   Output ~ 0
+IN03
+Text GLabel 1880 2630 2    39   Output ~ 0
+IN04
+Text GLabel 1880 2730 2    39   Output ~ 0
+IN05
+Text GLabel 1880 2830 2    39   Output ~ 0
+IN06
+Text GLabel 1880 3030 2    39   Output ~ 0
+IN08
+Text GLabel 1880 2930 2    39   Output ~ 0
+IN07
+$Comp
+L LED D?
+U 1 1 5B94D10D
+P 6740 1680
+F 0 "D?" H 6740 1780 50  0000 C CNN
+F 1 "LED" H 6740 1580 50  0000 C CNN
+F 2 "" H 6740 1680 50  0001 C CNN
+F 3 "" H 6740 1680 50  0001 C CNN
+	1    6740 1680
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D?
+U 1 1 5B94D160
+P 7250 1670
+F 0 "D?" H 7250 1770 50  0000 C CNN
+F 1 "LED" H 7250 1570 50  0000 C CNN
+F 2 "" H 7250 1670 50  0001 C CNN
+F 3 "" H 7250 1670 50  0001 C CNN
+	1    7250 1670
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6890 1680 6890 1670
+Wire Wire Line
+	6890 1670 7100 1670
+NoConn ~ 7400 1670
+NoConn ~ 6590 1680
+$EndSCHEMATC

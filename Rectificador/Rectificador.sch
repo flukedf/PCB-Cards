@@ -1,0 +1,240 @@
+EESchema Schematic File Version 2
+LIBS:Rectificador-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Rectificador-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 7500 3200 0    60   ~ 0
+GND_DRIVER
+Text Notes 7500 3050 0    60   ~ 0
++24VCD
+$Comp
+L CONN_01X02 P2
+U 1 1 57D84759
+P 7350 3100
+F 0 "P2" H 7350 3250 50  0000 C CNN
+F 1 "CONN_01X02" V 7450 3100 50  0000 C CNN
+F 2 "Terminal_Blocks:TerminalBlock_Pheonix_MKDS1.5-2pol" H 7350 3100 50  0001 C CNN
+F 3 "" H 7350 3100 50  0000 C CNN
+	1    7350 3100
+	1    0    0    1   
+$EndComp
+Text Label 4600 2550 0    59   ~ 0
+SOURCE
+$Comp
+L PWR_FLAG #FLG01
+U 1 1 57D8475A
+P 6150 3500
+F 0 "#FLG01" H 6150 3595 50  0001 C CNN
+F 1 "PWR_FLAG" H 6150 3680 50  0000 C CNN
+F 2 "" H 6150 3500 50  0000 C CNN
+F 3 "" H 6150 3500 50  0000 C CNN
+	1    6150 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L PWR_FLAG #FLG02
+U 1 1 57D8475B
+P 6000 2850
+F 0 "#FLG02" H 6000 2945 50  0001 C CNN
+F 1 "PWR_FLAG" H 6000 3030 50  0000 C CNN
+F 2 "" H 6000 2850 50  0000 C CNN
+F 3 "" H 6000 2850 50  0000 C CNN
+	1    6000 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDPWR #PWR03
+U 1 1 57D8475C
+P 4600 3250
+F 0 "#PWR03" H 4600 3050 50  0001 C CNN
+F 1 "GNDPWR" H 4600 3120 50  0000 C CNN
+F 2 "" H 4600 3200 50  0000 C CNN
+F 3 "" H 4600 3200 50  0000 C CNN
+	1    4600 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDPWR #PWR04
+U 1 1 57D8475D
+P 5750 3600
+F 0 "#PWR04" H 5750 3400 50  0001 C CNN
+F 1 "GNDPWR" H 5750 3470 50  0000 C CNN
+F 2 "" H 5750 3550 50  0000 C CNN
+F 3 "" H 5750 3550 50  0000 C CNN
+	1    5750 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L +24V #PWR05
+U 1 1 57D8475E
+P 5750 2700
+F 0 "#PWR05" H 5750 2550 50  0001 C CNN
+F 1 "+24V" H 5750 2840 50  0000 C CNN
+F 2 "" H 5750 2700 50  0000 C CNN
+F 3 "" H 5750 2700 50  0000 C CNN
+	1    5750 2700
+	1    0    0    -1  
+$EndComp
+Text Notes 3500 3150 0    60   ~ 0
+AC 24V
+$Comp
+L CONN_01X02 P1
+U 1 1 57D8475F
+P 4000 3100
+F 0 "P1" H 4000 3250 50  0000 C CNN
+F 1 "CONN_01X02" V 4100 3100 50  0000 C CNN
+F 2 "Terminal_Blocks:TerminalBlock_Pheonix_MKDS1.5-2pol" H 4000 3100 50  0001 C CNN
+F 3 "" H 4000 3100 50  0000 C CNN
+	1    4000 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L CP C1
+U 1 1 57D84760
+P 5750 3200
+F 0 "C1" H 5775 3300 50  0000 L CNN
+F 1 "100uF" H 5775 3100 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D6.3_L11.2_P2.5" H 5788 3050 50  0001 C CNN
+F 3 "" H 5750 3200 50  0000 C CNN
+	1    5750 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode_Bridge-RESCUE-Rectificador D1
+U 1 1 57D84761
+P 5150 3050
+F 0 "D1" H 4900 3350 50  0000 C CNN
+F 1 "KPB206" H 5500 2700 50  0000 C CNN
+F 2 "w_pth_diodes:bridge_2KBP" H 5150 3050 50  0001 C CNN
+F 3 "" H 5150 3050 50  0000 C CNN
+	1    5150 3050
+	1    0    0    -1  
+$EndComp
+Connection ~ 5750 2850
+Wire Wire Line
+	6000 2850 5750 2850
+Wire Wire Line
+	5750 2700 5750 3050
+Wire Wire Line
+	4400 3150 4400 3500
+Wire Wire Line
+	4200 3150 4400 3150
+Wire Wire Line
+	5150 2600 5150 2650
+Wire Wire Line
+	4400 2600 5150 2600
+Wire Wire Line
+	4400 3050 4400 2600
+Wire Wire Line
+	4200 3050 4400 3050
+Wire Wire Line
+	4600 3050 4750 3050
+Wire Wire Line
+	4600 3050 4600 3250
+Wire Wire Line
+	5550 3050 7150 3050
+Connection ~ 5750 3050
+$Comp
+L GNDPWR #PWR06
+U 1 1 57D855E5
+P 7150 3250
+F 0 "#PWR06" H 7150 3050 50  0001 C CNN
+F 1 "GNDPWR" H 7150 3120 50  0000 C CNN
+F 2 "" H 7150 3200 50  0000 C CNN
+F 3 "" H 7150 3200 50  0000 C CNN
+	1    7150 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 3150 7150 3250
+$Comp
+L R R1
+U 1 1 57D85DD4
+P 6600 3750
+F 0 "R1" V 6680 3750 50  0000 C CNN
+F 1 "1200" V 6600 3750 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 6530 3750 50  0001 C CNN
+F 3 "" H 6600 3750 50  0000 C CNN
+	1    6600 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D2
+U 1 1 57D85EFB
+P 6600 3350
+F 0 "D2" H 6600 3450 50  0000 C CNN
+F 1 "LED" H 6600 3250 50  0000 C CNN
+F 2 "LEDs:LED_D3.0mm" H 6600 3350 50  0001 C CNN
+F 3 "" H 6600 3350 50  0000 C CNN
+	1    6600 3350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6600 3150 6600 3050
+Connection ~ 6600 3050
+Wire Wire Line
+	6600 3550 6600 3600
+Wire Wire Line
+	6600 3900 6600 4050
+$Comp
+L GNDPWR #PWR07
+U 1 1 57D861EB
+P 6600 4050
+F 0 "#PWR07" H 6600 3850 50  0001 C CNN
+F 1 "GNDPWR" H 6600 3920 50  0000 C CNN
+F 2 "" H 6600 4000 50  0000 C CNN
+F 3 "" H 6600 4000 50  0000 C CNN
+	1    6600 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 3500 5150 3500
+Wire Wire Line
+	5150 3500 5150 3450
+Wire Wire Line
+	5750 3600 5750 3350
+Wire Wire Line
+	6150 3500 5750 3500
+Connection ~ 5750 3500
+$EndSCHEMATC

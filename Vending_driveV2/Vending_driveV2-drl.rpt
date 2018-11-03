@@ -1,0 +1,27 @@
+Drill report for C:/Users/Eduardo/Documents/PCBs/Vending_driveV2/Vending_driveV2.kicad_pcb
+Created on 12/09/2018 12:51:46 a. m.
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  B.Cu                      back
+
+
+Drill file 'Vending_driveV2-PTH.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.40mm  0.016"  (54 holes)
+    T2  0.80mm  0.031"  (72 holes)
+    T3  0.80mm  0.032"  (32 holes)
+    T4  1.00mm  0.039"  (12 holes)
+    T5  1.30mm  0.051"  (38 holes)
+
+    Total plated holes count 208
+
+
+Drill file 'Vending_driveV2-NPTH.drl' contains
+    unplated through holes:
+    =============================================================
+    T1  2.50mm  0.098"  (4 holes)
+
+    Total unplated holes count 4

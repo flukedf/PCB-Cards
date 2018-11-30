@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:pcb_ads1115-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -20,7 +19,7 @@ U 1 1 59945EC4
 P 6000 2550
 F 0 "J5" H 6000 3100 50  0000 C CNN
 F 1 "CONN_01X10" V 6100 2550 50  0000 C CNN
-F 2 "w_pin_strip:pin_socket_10" H 6000 2550 50  0001 C CNN
+F 2 "w_pin_strip:pin_strip_10" H 6000 2550 50  0001 C CNN
 F 3 "" H 6000 2550 50  0001 C CNN
 	1    6000 2550
 	1    0    0    -1  
@@ -31,7 +30,7 @@ U 1 1 59945F53
 P 6000 3700
 F 0 "J6" H 6000 4250 50  0000 C CNN
 F 1 "CONN_01X10" V 6100 3700 50  0000 C CNN
-F 2 "w_pin_strip:pin_socket_10" H 6000 3700 50  0001 C CNN
+F 2 "w_pin_strip:pin_strip_10" H 6000 3700 50  0001 C CNN
 F 3 "" H 6000 3700 50  0001 C CNN
 	1    6000 3700
 	1    0    0    -1  

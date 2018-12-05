@@ -1,5 +1,35 @@
-EESchema Schematic File Version 4
-EELAYER 26 0
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Leds_port-cache
+EELAYER 25 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
@@ -14,7 +44,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L power:PWR_FLAG #FLG01
+L PWR_FLAG #FLG01
 U 1 1 5B92A5C9
 P 2280 3470
 F 0 "#FLG01" H 2280 3545 50  0001 C CNN
@@ -25,7 +55,7 @@ F 3 "" H 2280 3470 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR02
+L VCC #PWR02
 U 1 1 5B92A5CB
 P 2130 3470
 F 0 "#PWR02" H 2130 3320 50  0001 C CNN
@@ -36,7 +66,7 @@ F 3 "" H 2130 3470 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG03
+L PWR_FLAG #FLG03
 U 1 1 5B92A5CC
 P 2450 3670
 F 0 "#FLG03" H 2450 3745 50  0001 C CNN
@@ -55,7 +85,7 @@ Text GLabel 2060 3580 0    39   Input ~ 0
 Text GLabel 2060 3720 0    39   Input ~ 0
 GND
 $Comp
-L Device:LED_ALT D3
+L LED-RESCUE-Modulo_I2C_v2.0 D3
 U 1 1 5B92A61A
 P 5910 2530
 F 0 "D3" H 5910 2600 39  0000 C CNN
@@ -66,7 +96,7 @@ F 3 "" H 5910 2530 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R3
+L R R3
 U 1 1 5B92A61B
 P 5560 2530
 F 0 "R3" V 5640 2530 50  0000 C CNN
@@ -77,7 +107,7 @@ F 3 "" H 5560 2530 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED_ALT D4
+L LED-RESCUE-Modulo_I2C_v2.0 D4
 U 1 1 5B92A61C
 P 5910 2720
 F 0 "D4" H 5920 2790 39  0000 C CNN
@@ -88,7 +118,7 @@ F 3 "" H 5910 2720 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R4
+L R R4
 U 1 1 5B92A61D
 P 5560 2720
 F 0 "R4" V 5640 2720 50  0000 C CNN
@@ -99,7 +129,7 @@ F 3 "" H 5560 2720 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED_ALT D2
+L LED-RESCUE-Modulo_I2C_v2.0 D2
 U 1 1 5B92A61E
 P 5910 2340
 F 0 "D2" H 5910 2410 39  0000 C CNN
@@ -110,7 +140,7 @@ F 3 "" H 5910 2340 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R2
+L R R2
 U 1 1 5B92A61F
 P 5560 2340
 F 0 "R2" V 5640 2340 50  0000 C CNN
@@ -121,7 +151,7 @@ F 3 "" H 5560 2340 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED_ALT D1
+L LED-RESCUE-Modulo_I2C_v2.0 D1
 U 1 1 5B92A620
 P 5910 2150
 F 0 "D1" H 5910 2220 39  0000 C CNN
@@ -132,7 +162,7 @@ F 3 "" H 5910 2150 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R1
+L R R1
 U 1 1 5B92A621
 P 5560 2150
 F 0 "R1" V 5640 2150 50  0000 C CNN
@@ -143,7 +173,7 @@ F 3 "" H 5560 2150 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED_ALT D5
+L LED-RESCUE-Modulo_I2C_v2.0 D5
 U 1 1 5B92A622
 P 5910 2910
 F 0 "D5" H 5910 2990 39  0000 C CNN
@@ -154,7 +184,7 @@ F 3 "" H 5910 2910 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R5
+L R R5
 U 1 1 5B92A623
 P 5560 2910
 F 0 "R5" V 5640 2910 50  0000 C CNN
@@ -165,7 +195,7 @@ F 3 "" H 5560 2910 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR04
+L GND #PWR04
 U 1 1 5B92A624
 P 6210 3520
 F 0 "#PWR04" H 6210 3270 50  0001 C CNN
@@ -176,7 +206,7 @@ F 3 "" H 6210 3520 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED_ALT D6
+L LED-RESCUE-Modulo_I2C_v2.0 D6
 U 1 1 5B92A625
 P 5910 3110
 F 0 "D6" H 5910 3180 39  0000 C CNN
@@ -187,7 +217,7 @@ F 3 "" H 5910 3110 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R6
+L R R6
 U 1 1 5B92A626
 P 5560 3110
 F 0 "R6" V 5640 3110 50  0000 C CNN
@@ -198,7 +228,7 @@ F 3 "" H 5560 3110 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED_ALT D7
+L LED-RESCUE-Modulo_I2C_v2.0 D7
 U 1 1 5B92A627
 P 5910 3300
 F 0 "D7" H 5920 3370 39  0000 C CNN
@@ -209,7 +239,7 @@ F 3 "" H 5910 3300 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R7
+L R R7
 U 1 1 5B92A628
 P 5560 3300
 F 0 "R7" V 5640 3300 50  0000 C CNN
@@ -220,7 +250,7 @@ F 3 "" H 5560 3300 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED_ALT D8
+L LED-RESCUE-Modulo_I2C_v2.0 D8
 U 1 1 5B92A629
 P 5910 3490
 F 0 "D8" H 5910 3570 39  0000 C CNN
@@ -231,7 +261,7 @@ F 3 "" H 5910 3490 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R8
+L R R8
 U 1 1 5B92A62A
 P 5560 3490
 F 0 "R8" V 5640 3490 50  0000 C CNN
@@ -278,7 +308,7 @@ S4
 Text GLabel 4900 2940 2    39   Output ~ 0
 S5
 $Comp
-L power:GND #PWR05
+L GND #PWR05
 U 1 1 5B92A62B
 P 3350 3590
 F 0 "#PWR05" H 3350 3340 50  0001 C CNN
@@ -289,7 +319,7 @@ F 3 "" H 3350 3590 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74xx:74LS244 U1
+L 74LS244 U1
 U 1 1 5B92A62C
 P 4200 3040
 F 0 "U1" H 4250 2840 50  0000 C CNN
@@ -312,7 +342,7 @@ IN07
 Text GLabel 3500 3240 0    39   Input ~ 0
 IN08
 $Comp
-L Device:C C1
+L C C1
 U 1 1 5B92A633
 P 3680 3690
 F 0 "C1" H 3705 3790 50  0000 L CNN
@@ -323,7 +353,7 @@ F 3 "" H 3680 3690 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:VCC #PWR06
+L VCC #PWR06
 U 1 1 5B92A634
 P 3900 3690
 F 0 "#PWR06" H 3900 3540 50  0001 C CNN
@@ -334,7 +364,7 @@ F 3 "" H 3900 3690 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:LED_ALT D9
+L LED-RESCUE-Modulo_I2C_v2.0 D9
 U 1 1 5B92A637
 P 3760 4230
 F 0 "D9" H 3760 4300 39  0000 C CNN
@@ -345,7 +375,7 @@ F 3 "" H 3760 4230 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R9
+L R R9
 U 1 1 5B92A638
 P 4110 4230
 F 0 "R9" V 4190 4230 50  0000 C CNN
@@ -356,7 +386,7 @@ F 3 "" H 4110 4230 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR07
+L GND #PWR07
 U 1 1 5B92A639
 P 4260 4230
 F 0 "#PWR07" H 4260 3980 50  0001 C CNN
@@ -367,7 +397,7 @@ F 3 "" H 4260 4230 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:VCC #PWR08
+L VCC #PWR08
 U 1 1 5B92A63A
 P 3560 4230
 F 0 "#PWR08" H 3560 4080 50  0001 C CNN
@@ -381,9 +411,9 @@ Connection ~ 3350 3540
 Wire Wire Line
 	3500 3440 3350 3440
 Wire Wire Line
-	3350 3540 3440 3540
+	3350 3540 3500 3540
 Wire Wire Line
-	3350 3440 3350 3540
+	3350 3440 3350 3590
 Connection ~ 6210 3490
 Wire Wire Line
 	6110 3490 6210 3490
@@ -406,7 +436,7 @@ Connection ~ 6210 2530
 Wire Wire Line
 	6110 2150 6210 2150
 Wire Wire Line
-	6210 2150 6210 2340
+	6210 2150 6210 3520
 Wire Wire Line
 	6110 2530 6210 2530
 Connection ~ 2130 3580
@@ -415,7 +445,7 @@ Wire Wire Line
 Wire Wire Line
 	2280 3580 2280 3470
 Wire Wire Line
-	2060 3580 2130 3580
+	2060 3580 2280 3580
 Wire Wire Line
 	3830 3690 3900 3690
 Wire Wire Line
@@ -427,11 +457,11 @@ Wire Wire Line
 	2450 3670 2450 3720
 Connection ~ 2450 3720
 Wire Wire Line
-	2060 3720 2450 3720
+	2060 3720 2590 3720
 Wire Wire Line
 	2590 3720 2590 3670
 $Comp
-L power:GND #PWR09
+L GND #PWR09
 U 1 1 5B92A5CD
 P 2590 3670
 F 0 "#PWR09" H 2590 3420 50  0001 C CNN
@@ -442,7 +472,7 @@ F 3 "" H 2590 3670 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 J1
+L CONN_01X02 J1
 U 1 1 5B937BEB
 P 1690 1910
 F 0 "J1" H 1690 2060 50  0000 C CNN
@@ -453,7 +483,7 @@ F 3 "" H 1690 1910 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x08 J2
+L CONN_01X08 J2
 U 1 1 5B937C6A
 P 1680 2680
 F 0 "J2" H 1680 3130 50  0000 C CNN
@@ -480,7 +510,7 @@ IN08
 Text GLabel 1880 2930 2    39   Output ~ 0
 IN07
 $Comp
-L Device:LED D?
+L LED D?
 U 1 1 5B94D10D
 P 6740 1680
 F 0 "D?" H 6740 1780 50  0000 C CNN
@@ -491,7 +521,7 @@ F 3 "" H 6740 1680 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED D?
+L LED D?
 U 1 1 5B94D160
 P 7250 1670
 F 0 "D?" H 7250 1770 50  0000 C CNN
@@ -507,26 +537,4 @@ Wire Wire Line
 	6890 1670 7100 1670
 NoConn ~ 7400 1670
 NoConn ~ 6590 1680
-Wire Wire Line
-	3350 3540 3350 3590
-Wire Wire Line
-	6210 3490 6210 3520
-Wire Wire Line
-	6210 3110 6210 3300
-Wire Wire Line
-	6210 3300 6210 3490
-Wire Wire Line
-	6210 2910 6210 3110
-Wire Wire Line
-	6210 2720 6210 2910
-Wire Wire Line
-	6210 2340 6210 2530
-Wire Wire Line
-	6210 2530 6210 2720
-Wire Wire Line
-	2130 3580 2280 3580
-Wire Wire Line
-	3440 3540 3500 3540
-Wire Wire Line
-	2450 3720 2590 3720
 $EndSCHEMATC

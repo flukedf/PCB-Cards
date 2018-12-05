@@ -1,0 +1,29 @@
+Drill report for C:/Users/Tolinka/Documents/GitHub/PCB-Cards/ExpansionUSB/ExpansionUSB.kicad_pcb
+Created on 02/12/2018 21:28:19
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  B.Cu                      back
+
+
+Drill file 'ExpansionUSB-PTH.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0,60mm  0,024"  (9 holes)
+    T2  0,76mm  0,030"  (30 holes)
+    T3  0,80mm  0,031"  (16 holes)
+    T4  0,90mm  0,035"  (8 holes)
+    T5  0,90mm  0,035"  (4 holes)  (with 4 slots)
+    T6  2,00mm  0,079"  (4 holes)
+    T7  3,05mm  0,120"  (4 holes)
+
+    Total plated holes count 75
+
+
+Drill file 'ExpansionUSB-NPTH.drl' contains
+    unplated through holes:
+    =============================================================
+    T1  1,10mm  0,043"  (4 holes)
+
+    Total unplated holes count 4

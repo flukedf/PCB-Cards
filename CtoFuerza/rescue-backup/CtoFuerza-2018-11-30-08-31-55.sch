@@ -1,0 +1,211 @@
+EESchema Schematic File Version 2
+LIBS:transistor-power
+LIBS:irf-2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:CtoFuerza-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L R R1
+U 1 1 568C4908
+P 3300 3450
+F 0 "R1" V 3380 3450 50  0000 C CNN
+F 1 "R" V 3300 3450 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 3230 3450 50  0001 C CNN
+F 3 "" H 3300 3450 50  0000 C CNN
+	1    3300 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 568C49F1
+P 4050 2950
+F 0 "R2" V 4150 2950 50  0000 C CNN
+F 1 "R" V 4050 2950 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 3980 2950 50  0001 C CNN
+F 3 "" H 4050 2950 50  0000 C CNN
+	1    4050 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L BC548 Q1
+U 1 1 568C4A16
+P 3950 3450
+F 0 "Q1" H 4150 3525 50  0000 L CNN
+F 1 "BC548" H 4150 3450 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Molded_Narrow" H 4150 3375 50  0000 L CIN
+F 3 "" H 3950 3450 50  0000 L CNN
+	1    3950 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 568C52F3
+P 4850 3450
+F 0 "#PWR01" H 4850 3200 50  0001 C CNN
+F 1 "GND" H 4850 3300 50  0000 C CNN
+F 2 "" H 4850 3450 50  0000 C CNN
+F 3 "" H 4850 3450 50  0000 C CNN
+	1    4850 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 568C530F
+P 4050 3900
+F 0 "#PWR02" H 4050 3650 50  0001 C CNN
+F 1 "GND" H 4050 3750 50  0000 C CNN
+F 2 "" H 4050 3900 50  0000 C CNN
+F 3 "" H 4050 3900 50  0000 C CNN
+	1    4050 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P1
+U 1 1 568C53CB
+P 2700 3500
+F 0 "P1" H 2700 3650 50  0000 C CNN
+F 1 "CONN_01X02" V 2800 3500 50  0000 C CNN
+F 2 "Connect:AK300-2" H 2700 3500 50  0001 C CNN
+F 3 "" H 2700 3500 50  0000 C CNN
+	1    2700 3500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4050 3100 4050 3250
+Wire Wire Line
+	4050 3650 4050 3900
+Wire Wire Line
+	3750 3450 3450 3450
+Wire Wire Line
+	4850 3450 4850 3300
+$Comp
+L GND #PWR03
+U 1 1 568C55B8
+P 2900 3750
+F 0 "#PWR03" H 2900 3500 50  0001 C CNN
+F 1 "GND" H 2900 3600 50  0000 C CNN
+F 2 "" H 2900 3750 50  0000 C CNN
+F 3 "" H 2900 3750 50  0000 C CNN
+	1    2900 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 3550 2900 3750
+$Comp
+L CONN_01X02 P2
+U 1 1 568C57A0
+P 5600 3100
+F 0 "P2" H 5600 3250 50  0000 C CNN
+F 1 "CONN_01X02" V 5700 3100 50  0000 C CNN
+F 2 "Connect:AK300-2" H 5600 3100 50  0001 C CNN
+F 3 "" H 5600 3100 50  0000 C CNN
+	1    5600 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 2900 5400 2900
+Wire Wire Line
+	5400 2900 5400 3050
+Wire Wire Line
+	5400 3150 5400 3350
+Wire Wire Line
+	5400 3350 4850 3350
+Connection ~ 4850 3350
+$Comp
+L +12V #PWR04
+U 1 1 568C588E
+P 4050 2600
+F 0 "#PWR04" H 4050 2450 50  0001 C CNN
+F 1 "+12V" H 4050 2740 50  0000 C CNN
+F 2 "" H 4050 2600 50  0000 C CNN
+F 3 "" H 4050 2600 50  0000 C CNN
+	1    4050 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 2800 4050 2600
+$Comp
+L PWR_FLAG #FLG05
+U 1 1 568C58C2
+P 4350 2650
+F 0 "#FLG05" H 4350 2745 50  0001 C CNN
+F 1 "PWR_FLAG" H 4350 2830 50  0000 C CNN
+F 2 "" H 4350 2650 50  0000 C CNN
+F 3 "" H 4350 2650 50  0000 C CNN
+	1    4350 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG06
+U 1 1 568C595A
+P 2450 3750
+F 0 "#FLG06" H 2450 3845 50  0001 C CNN
+F 1 "PWR_FLAG" H 2450 3930 50  0000 C CNN
+F 2 "" H 2450 3750 50  0000 C CNN
+F 3 "" H 2450 3750 50  0000 C CNN
+	1    2450 3750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2900 3750 2450 3750
+Wire Wire Line
+	4350 2650 4050 2650
+Connection ~ 4050 2650
+Wire Wire Line
+	2900 3450 3150 3450
+$Comp
+L IRF540N Q2
+U 1 1 568C5C29
+P 4750 3100
+F 0 "Q2" H 5000 3175 50  0000 L CNN
+F 1 "IRF540N" H 5000 3100 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-220_Neutral123_Vertical" H 5000 3025 50  0000 L CIN
+F 3 "" H 4750 3100 50  0000 L CNN
+	1    4750 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 3150 4050 3150
+Connection ~ 4050 3150
+$EndSCHEMATC

@@ -1,4 +1,4 @@
-update=04/09/2018 11:00:32 a. m.
+update=30/11/2018 9:26:15
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,46 +25,6 @@ version=1
 NetIExt=net
 [general]
 version=1
-[eeschema]
-version=1
-LibDir=
-[eeschema/libraries]
-LibName1=power
-LibName2=device
-LibName3=transistors
-LibName4=conn
-LibName5=linear
-LibName6=regul
-LibName7=74xx
-LibName8=cmos4000
-LibName9=adc-dac
-LibName10=memory
-LibName11=xilinx
-LibName12=microcontrollers
-LibName13=dsp
-LibName14=microchip
-LibName15=analog_switches
-LibName16=motorola
-LibName17=texas
-LibName18=intel
-LibName19=audio
-LibName20=interface
-LibName21=digital-audio
-LibName22=philips
-LibName23=display
-LibName24=cypress
-LibName25=siliconi
-LibName26=opto
-LibName27=atmel
-LibName28=contrib
-LibName29=valves
-LibName30=C:/Users/Eduardo/Downloads/Librerias KiCad/lib_switch_dip/sw_dip
-LibName31=C:/Users/Eduardo/Downloads/Librerias KiCad/lib_w_connectors/w_connectors
-LibName32=C:/Users/Eduardo/Downloads/Librerias KiCad/kicad-library-master02/library/switches
-LibName33=C:/Users/Eduardo/Downloads/Librerias KiCad/TL3342F160QG/TL3342F160QG
-LibName34=switches
-LibName35=C:/Users/Eduardo/Downloads/Librerias KiCad/KiCad-master_alps/library/ab2_input_devices
-LibName36=C:/Users/Eduardo/Downloads/Librerias KiCad/lib_w_device/w_device
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
@@ -75,3 +35,6 @@ NetFmtName=
 SpiceForceRefPrefix=0
 SpiceUseNetNumbers=0
 LabSize=60
+[eeschema]
+version=1
+LibDir=

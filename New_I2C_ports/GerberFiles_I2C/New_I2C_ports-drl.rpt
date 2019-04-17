@@ -1,0 +1,26 @@
+Drill report for C:/Users/Eduardo/Documents/PCB-Cards/New_I2C_ports/New_I2C_ports.kicad_pcb
+Created on 12/04/2019 12:40:26
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  B.Cu                      back
+
+
+Drill file 'New_I2C_ports-PTH.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.40mm  0.016"  (1 hole)
+    T2  0.80mm  0.032"  (16 holes)
+    T3  1.00mm  0.039"  (29 holes)
+    T4  1.30mm  0.051"  (33 holes)
+    T5  2.70mm  0.106"  (4 holes)
+
+    Total plated holes count 83
+
+
+Drill file 'New_I2C_ports-NPTH.drl' contains
+    unplated through holes:
+    =============================================================
+
+    Total unplated holes count 0

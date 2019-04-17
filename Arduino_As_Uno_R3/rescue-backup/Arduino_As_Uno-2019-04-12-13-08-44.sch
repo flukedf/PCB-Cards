@@ -1,6 +1,35 @@
-EESchema Schematic File Version 4
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
 LIBS:Arduino_As_Uno-cache
-EELAYER 26 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -26,7 +55,7 @@ Text Label 8900 2700 0    60   ~ 0
 A2
 Text Label 8900 2800 0    60   ~ 0
 A3
-Text Label 7740 1180 0    60   ~ 0
+Text Label 7790 1930 0    60   ~ 0
 (SDA)
 Text Label 10550 3000 0    60   ~ 0
 0(Rx)
@@ -68,20 +97,20 @@ Holes
 Text Notes 8550 750  0    60   ~ 0
 Shield for Arduino that uses\nthe same pin disposition\nlike "Uno" board Rev 3.
 $Comp
-L Connector_Generic:Conn_01x08 P1
+L CONN_01X08 P1
 U 1 1 56D70129
-P 9600 1900
-F 0 "P1" H 9600 2350 50  0000 C CNN
-F 1 "Power" V 9700 1900 50  0000 C CNN
-F 2 "w_pin_strip:pin_strip_8" H 9600 1900 50  0001 C CNN
-F 3 "" H 9600 1900 50  0000 C CNN
-	1    9600 1900
+P 9600 1950
+F 0 "P1" H 9600 2400 50  0000 C CNN
+F 1 "Power" V 9700 1950 50  0000 C CNN
+F 2 "Socket_Arduino_Uno:Socket_Strip_Arduino_1x08" H 9600 1950 50  0001 C CNN
+F 3 "" H 9600 1950 50  0000 C CNN
+	1    9600 1950
 	1    0    0    -1  
 $EndComp
 Text Label 8650 1800 0    60   ~ 0
 Reset
 $Comp
-L power:+3.3V #PWR01
+L +3.3V #PWR01
 U 1 1 56D70538
 P 9150 1450
 F 0 "#PWR01" H 9150 1300 50  0001 C CNN
@@ -92,7 +121,7 @@ F 3 "" H 9150 1450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR02
+L +5V #PWR02
 U 1 1 56D707BB
 P 9050 1450
 F 0 "#PWR02" H 9050 1300 50  0001 C CNN
@@ -103,7 +132,7 @@ F 3 "" H 9050 1450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR03
+L GND #PWR03
 U 1 1 56D70CC2
 P 9300 3150
 F 0 "#PWR03" H 9300 2900 50  0001 C CNN
@@ -114,7 +143,7 @@ F 3 "" H 9300 3150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR04
+L GND #PWR04
 U 1 1 56D70CFF
 P 10300 3150
 F 0 "#PWR04" H 10300 2900 50  0001 C CNN
@@ -125,18 +154,18 @@ F 3 "" H 10300 3150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x06 P2
+L CONN_01X06 P2
 U 1 1 56D70DD8
-P 9600 2700
-F 0 "P2" H 9600 3050 50  0000 C CNN
-F 1 "Analog" V 9700 2700 50  0000 C CNN
-F 2 "w_pin_strip:pin_strip_6" H 9600 2700 50  0001 C CNN
-F 3 "" H 9600 2700 50  0000 C CNN
-	1    9600 2700
+P 9600 2750
+F 0 "P2" H 9600 3100 50  0000 C CNN
+F 1 "Analog" V 9700 2750 50  0000 C CNN
+F 2 "Socket_Arduino_Uno:Socket_Strip_Arduino_1x06" H 9600 2750 50  0001 C CNN
+F 3 "" H 9600 2750 50  0000 C CNN
+	1    9600 2750
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 P5
+L CONN_01X01 P5
 U 1 1 56D71177
 P 10800 650
 F 0 "P5" V 10900 650 50  0000 C CNN
@@ -147,7 +176,7 @@ F 3 "" H 10800 650 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 P6
+L CONN_01X01 P6
 U 1 1 56D71274
 P 10900 650
 F 0 "P6" V 11000 650 50  0000 C CNN
@@ -158,7 +187,7 @@ F 3 "" H 10900 650 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 P7
+L CONN_01X01 P7
 U 1 1 56D712A8
 P 11000 650
 F 0 "P7" V 11100 650 50  0000 C CNN
@@ -169,7 +198,7 @@ F 3 "" H 11000 650 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 P8
+L CONN_01X01 P8
 U 1 1 56D712DB
 P 11100 650
 F 0 "P8" V 11200 650 50  0000 C CNN
@@ -184,14 +213,14 @@ NoConn ~ 10900 850
 NoConn ~ 11000 850 
 NoConn ~ 11100 850 
 $Comp
-L Connector_Generic:Conn_01x08 P4
+L CONN_01X08 P4
 U 1 1 56D7164F
-P 10000 2600
-F 0 "P4" H 10000 3050 50  0000 C CNN
-F 1 "Digital" V 10100 2600 50  0000 C CNN
-F 2 "w_pin_strip:pin_strip_8" H 10000 2600 50  0001 C CNN
-F 3 "" H 10000 2600 50  0000 C CNN
-	1    10000 2600
+P 10000 2650
+F 0 "P4" H 10000 3100 50  0000 C CNN
+F 1 "Digital" V 10100 2650 50  0000 C CNN
+F 2 "Socket_Arduino_Uno:Socket_Strip_Arduino_1x08" H 10000 2650 50  0001 C CNN
+F 3 "" H 10000 2650 50  0000 C CNN
+	1    10000 2650
 	-1   0    0    -1  
 $EndComp
 Wire Notes Line
@@ -228,14 +257,14 @@ Wire Wire Line
 Wire Wire Line
 	9400 2800 8900 2800
 $Comp
-L Connector_Generic:Conn_01x10 P3
+L CONN_01X10 P3
 U 1 1 56D721E0
-P 10000 1600
-F 0 "P3" H 10000 2150 50  0000 C CNN
-F 1 "Digital" V 10100 1600 50  0000 C CNN
-F 2 "w_pin_strip:pin_strip_10" H 10000 1600 50  0001 C CNN
-F 3 "" H 10000 1600 50  0000 C CNN
-	1    10000 1600
+P 10000 1650
+F 0 "P3" H 10000 2200 50  0000 C CNN
+F 1 "Digital" V 10100 1650 50  0000 C CNN
+F 2 "Socket_Arduino_Uno:Socket_Strip_Arduino_1x10" H 10000 1650 50  0001 C CNN
+F 3 "" H 10000 1650 50  0000 C CNN
+	1    10000 1650
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
@@ -277,39 +306,39 @@ Wire Wire Line
 Wire Wire Line
 	10300 1500 10300 3150
 Wire Wire Line
-	9300 2100 9300 2200
+	9300 2100 9300 3150
 Wire Notes Line
 	8500 500  8500 3450
 Wire Notes Line
 	8500 3450 11200 3450
 Wire Wire Line
 	9400 1800 8650 1800
-Text Notes 9700 1550 0    60   ~ 0
+Text Notes 9700 1600 0    60   ~ 0
 1
 Wire Notes Line
 	11200 1000 10700 1000
 Wire Notes Line
 	10700 1000 10700 500 
 $Comp
-L Connector_Generic:Conn_01x04 P9
+L CONN_01X04 P9
 U 1 1 58E5681A
-P 7430 1180
-F 0 "P9" H 7430 1430 50  0000 C CNN
-F 1 "CONN_01X04" V 7530 1180 50  0000 C CNN
-F 2 "w_conn_mkds:mkds_1,5-4" H 7430 1180 50  0001 C CNN
-F 3 "" H 7430 1180 50  0000 C CNN
-	1    7430 1180
+P 7480 1980
+F 0 "P9" H 7480 2230 50  0000 C CNN
+F 1 "CONN_01X04" V 7580 1980 50  0000 C CNN
+F 2 "w_conn_mkds:mkds_1,5-4" H 7480 1980 50  0001 C CNN
+F 3 "" H 7480 1980 50  0000 C CNN
+	1    7480 1980
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	7630 1080 7730 1080
+	7680 1830 7780 1830
 Wire Wire Line
-	7630 1180 7740 1180
+	7680 1930 7790 1930
 Wire Wire Line
-	7630 1280 7740 1280
+	7680 2030 7790 2030
 Wire Wire Line
-	7630 1380 7740 1380
-Text Label 7740 1280 0    60   ~ 0
+	7680 2130 7790 2130
+Text Label 7790 2030 0    60   ~ 0
 (SCL)
 Text Label 8900 2900 0    60   ~ 0
 A4
@@ -320,52 +349,52 @@ Wire Wire Line
 Wire Wire Line
 	9400 3000 8900 3000
 $Comp
-L power:+5V #PWR05
+L +5V #PWR05
 U 1 1 58E57C4E
-P 7730 1080
-F 0 "#PWR05" H 7730 930 50  0001 C CNN
-F 1 "+5V" H 7730 1220 30  0000 C CNN
-F 2 "" H 7730 1080 50  0000 C CNN
-F 3 "" H 7730 1080 50  0000 C CNN
-	1    7730 1080
+P 7780 1830
+F 0 "#PWR05" H 7780 1680 50  0001 C CNN
+F 1 "+5V" H 7780 1970 30  0000 C CNN
+F 2 "" H 7780 1830 50  0000 C CNN
+F 3 "" H 7780 1830 50  0000 C CNN
+	1    7780 1830
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR06
+L GND #PWR06
 U 1 1 58E57E5A
-P 7740 1380
-F 0 "#PWR06" H 7740 1130 50  0001 C CNN
-F 1 "GND" H 7740 1230 50  0000 C CNN
-F 2 "" H 7740 1380 50  0000 C CNN
-F 3 "" H 7740 1380 50  0000 C CNN
-	1    7740 1380
+P 7790 2130
+F 0 "#PWR06" H 7790 1880 50  0001 C CNN
+F 1 "GND" H 7790 1980 50  0000 C CNN
+F 2 "" H 7790 2130 50  0000 C CNN
+F 3 "" H 7790 2130 50  0000 C CNN
+	1    7790 2130
 	1    0    0    -1  
 $EndComp
 Text Label 7680 2530 0    60   ~ 0
-7
-Text Label 7680 2630 0    60   ~ 0
-6(**)
-Text Label 7680 2730 0    60   ~ 0
-5(**)
-Text Label 7680 2830 0    60   ~ 0
-4
-Text Label 7680 2930 0    60   ~ 0
 A0
-Text Label 7680 3030 0    60   ~ 0
+Text Label 7680 2630 0    60   ~ 0
 A1
+Text Label 7680 2730 0    60   ~ 0
+A2
+Text Label 7680 2830 0    60   ~ 0
+A3
+Text Label 7680 2930 0    60   ~ 0
+A4
+Text Label 7680 3030 0    60   ~ 0
+A5
 $Comp
-L Connector_Generic:Conn_01x02 P11
+L CONN_01X02 P11
 U 1 1 58E58511
-P 7520 3470
-F 0 "P11" H 7520 3620 50  0000 C CNN
-F 1 "CONN_01X02" V 7620 3470 50  0000 C CNN
-F 2 "w_conn_mkds:mkds_1,5-2" H 7520 3470 50  0001 C CNN
-F 3 "" H 7520 3470 50  0000 C CNN
-	1    7520 3470
+P 7520 3520
+F 0 "P11" H 7520 3670 50  0000 C CNN
+F 1 "CONN_01X02" V 7620 3520 50  0000 C CNN
+F 2 "w_conn_mkds:mkds_1,5-2" H 7520 3520 50  0001 C CNN
+F 3 "" H 7520 3520 50  0000 C CNN
+	1    7520 3520
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x07 P10
+L CONN_01X07 P10
 U 1 1 58E586E5
 P 7480 2830
 F 0 "P10" H 7480 3230 50  0000 C CNN
@@ -376,7 +405,7 @@ F 3 "" H 7480 2830 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR07
+L +5V #PWR07
 U 1 1 58E58E3C
 P 7720 3470
 F 0 "#PWR07" H 7720 3320 50  0001 C CNN
@@ -387,7 +416,7 @@ F 3 "" H 7720 3470 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR08
+L GND #PWR08
 U 1 1 58E59272
 P 7720 3570
 F 0 "#PWR08" H 7720 3320 50  0001 C CNN
@@ -399,83 +428,4 @@ F 3 "" H 7720 3570 50  0000 C CNN
 $EndComp
 Text Label 7680 3130 0    60   ~ 0
 AREF
-$Comp
-L Connector_Generic:Conn_01x03 J1
-U 1 1 5ADA020B
-P 7550 4050
-F 0 "J1" H 7550 4250 50  0000 C CNN
-F 1 "CONN_01X03" V 7650 4050 50  0000 C CNN
-F 2 "w_conn_mkds:mkds_1,5-3" H 7550 4050 50  0001 C CNN
-F 3 "" H 7550 4050 50  0001 C CNN
-	1    7550 4050
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR09
-U 1 1 5ADA1020
-P 7850 4150
-F 0 "#PWR09" H 7850 3900 50  0001 C CNN
-F 1 "GND" H 7850 4000 50  0000 C CNN
-F 2 "" H 7850 4150 50  0001 C CNN
-F 3 "" H 7850 4150 50  0001 C CNN
-	1    7850 4150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7750 4150 7850 4150
-Text Label 7800 3950 0    60   ~ 0
-1(Tx)
-Text Label 7800 4050 0    60   ~ 0
-0(Rx)
-Wire Wire Line
-	7750 3950 7800 3950
-Wire Wire Line
-	7750 4050 7800 4050
-Text Label 6790 1830 0    60   ~ 0
-(SDA)
-$Comp
-L Connector_Generic:Conn_01x04 P12
-U 1 1 5B02F92D
-P 6480 1830
-F 0 "P12" H 6480 2080 50  0000 C CNN
-F 1 "CONN_01X04" V 6580 1830 50  0000 C CNN
-F 2 "w_pin_strip:pin_socket_4" H 6480 1830 50  0001 C CNN
-F 3 "" H 6480 1830 50  0000 C CNN
-	1    6480 1830
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	6680 1730 6780 1730
-Wire Wire Line
-	6680 1830 6790 1830
-Wire Wire Line
-	6680 1930 6790 1930
-Wire Wire Line
-	6680 2030 6790 2030
-Text Label 6790 1930 0    60   ~ 0
-(SCL)
-$Comp
-L power:+5V #PWR010
-U 1 1 5B02F938
-P 6780 1730
-F 0 "#PWR010" H 6780 1580 50  0001 C CNN
-F 1 "+5V" H 6780 1870 30  0000 C CNN
-F 2 "" H 6780 1730 50  0000 C CNN
-F 3 "" H 6780 1730 50  0000 C CNN
-	1    6780 1730
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR011
-U 1 1 5B02F93E
-P 6790 2030
-F 0 "#PWR011" H 6790 1780 50  0001 C CNN
-F 1 "GND" H 6790 1880 50  0000 C CNN
-F 2 "" H 6790 2030 50  0000 C CNN
-F 3 "" H 6790 2030 50  0000 C CNN
-	1    6790 2030
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9300 2200 9300 3150
 $EndSCHEMATC

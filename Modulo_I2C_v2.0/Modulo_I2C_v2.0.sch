@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:Modulo_I2C_v2.0-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -358,7 +357,6 @@ Wire Wire Line
 Connection ~ 10300 2550
 Wire Wire Line
 	10650 2950 10300 2950
-Connection ~ 10300 2740
 Wire Wire Line
 	10300 3150 10650 3150
 Connection ~ 10300 2950
@@ -501,17 +499,6 @@ Wire Wire Line
 Wire Wire Line
 	2780 3680 2640 3680
 $Comp
-L Modulo_I2C_v2.0-rescue:LED-RESCUE-Modulo_I2C_v2.0 D1
-U 1 1 58DC5F40
-P 9700 920
-F 0 "D1" H 9700 1020 50  0000 C CNN
-F 1 "LED" H 9700 820 50  0000 C CNN
-F 2 "w_smd_leds:Led_PLCC2_3528" H 9700 920 50  0001 C CNN
-F 3 "" H 9700 920 50  0000 C CNN
-	1    9700 920 
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:R R11
 U 1 1 58DC6066
 P 9700 1270
@@ -572,4 +559,19 @@ Wire Wire Line
 	8810 2450 10650 2450
 Wire Wire Line
 	10300 2550 10300 2950
+$Comp
+L Device:LED_ALT D1
+U 1 1 5CAF1501
+P 9700 910
+F 0 "D1" V 9738 792 50  0000 R CNN
+F 1 "LED_ALT" V 9647 792 50  0000 R CNN
+F 2 "w_smd_leds:Led_PLCC2_3528" H 9700 910 50  0001 C CNN
+F 3 "~" H 9700 910 50  0001 C CNN
+	1    9700 910 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9700 720  9700 760 
+Wire Wire Line
+	9700 1060 9700 1120
 $EndSCHEMATC

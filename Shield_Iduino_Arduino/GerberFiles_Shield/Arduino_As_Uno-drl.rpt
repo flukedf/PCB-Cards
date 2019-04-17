@@ -1,0 +1,25 @@
+Drill report for C:/Users/Eduardo/Documents/PCB-Cards/Shield_Iduino_Arduino/Arduino_As_Uno.kicad_pcb
+Created on 12/04/2019 12:39:04
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  B.Cu                      back
+
+
+Drill file 'Arduino_As_Uno-PTH.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.40mm  0.016"  (1 hole)
+    T2  1.00mm  0.039"  (36 holes)
+    T3  1.30mm  0.051"  (16 holes)
+    T4  3.05mm  0.120"  (4 holes)
+
+    Total plated holes count 57
+
+
+Drill file 'Arduino_As_Uno-NPTH.drl' contains
+    unplated through holes:
+    =============================================================
+
+    Total unplated holes count 0

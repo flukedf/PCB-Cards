@@ -1,5 +1,5 @@
 
-(rules PCB monitorIO
+(rules PCB RPi_Hat
   (snap_angle 
     fortyfive_degree
   )
@@ -11,18 +11,18 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 100)
+    (start_pass_no 224)
     (layer_rule F.Cu
       (active on)
       (preferred_direction vertical)
       (preferred_direction_trace_costs 1.0)
-      (against_preferred_direction_trace_costs 3.5)
+      (against_preferred_direction_trace_costs 2.1)
     )
     (layer_rule B.Cu
       (active on)
       (preferred_direction horizontal)
       (preferred_direction_trace_costs 1.0)
-      (against_preferred_direction_trace_costs 1.4)
+      (against_preferred_direction_trace_costs 1.9)
     )
   )
   (rule
@@ -31,26 +31,26 @@
     (clear 250.0 (type smd_to_turn_gap))
     (clear 50.0 (type smd_smd))
   )
-  (padstack "Via[0-1]_800:400_um"
+  (padstack "Via[0-1]_600:400_um"
     (shape
-      (circle F.Cu 800.0 0.0 0.0)
+      (circle F.Cu 600.0 0.0 0.0)
     )
     (shape
-      (circle B.Cu 800.0 0.0 0.0)
+      (circle B.Cu 600.0 0.0 0.0)
     )
     (attach off)
   )
   (via 
-    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+    "Via[0-1]_600:400_um" "Via[0-1]_600:400_um" default
   )
   (via 
-    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+    "Via[0-1]_600:400_um-kicad_default" "Via[0-1]_600:400_um" "kicad_default"
   )
   (via_rule
-    default "Via[0-1]_800:400_um"
+    default "Via[0-1]_600:400_um"
   )
   (via_rule
-    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+    "kicad_default" "Via[0-1]_600:400_um-kicad_default"
   )
   (class default
     (clearance_class default)
@@ -63,9 +63,7 @@
     )
   )
   (class "kicad_default"
-    GND "Net-(D1-Pad2)" "Net-(D2-Pad2)" "Net-(D3-Pad2)" "Net-(D4-Pad2)" "Net-(D5-Pad2)" "Net-(D6-Pad2)" "Net-(D7-Pad2)"
-    "Net-(D8-Pad2)" "Net-(J1-Pad1)" "Net-(J1-Pad2)" "Net-(J1-Pad3)" "Net-(J1-Pad4)" "Net-(J1-Pad5)" "Net-(J1-Pad6)" "Net-(J1-Pad7)"
-    "Net-(J1-Pad8)"
+    GND +5V +3V3 "/RPi_GPIO/SCL" "/RPi_GPIO/SDA" "Net-(D1-Pad1)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule

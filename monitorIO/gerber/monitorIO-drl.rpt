@@ -1,5 +1,5 @@
 Drill report for C:\Users\Eduardo\Documents\PCB-Cards\monitorIO\monitorIO.kicad_pcb
-Created on 31/07/2019 16:28:47
+Created on 12/08/2019 13:29:22
 
 Copper Layer Stackup:
     =============================================================
@@ -10,10 +10,10 @@ Copper Layer Stackup:
 Drill file 'monitorIO-PTH.drl' contains
     plated through holes:
     =============================================================
-    T1  0.40mm  0.016"  (1 hole)
+    T1  0.40mm  0.016"  (8 holes)
     T2  1.00mm  0.039"  (9 holes)
 
-    Total plated holes count 10
+    Total plated holes count 17
 
 
 Drill file 'monitorIO-NPTH.drl' contains
